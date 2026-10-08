@@ -19,7 +19,7 @@ New versions install over the old one and keep your progress, because every buil
 - **Pronunciation.** 🔊 plays the word in your phone's Spain-Spanish voice; 🐢 plays it slowly. Choose between installed Spain voices in Ajustes.
 - **Spaced repetition.** Words you get right come back after 1, 3, 7, 14, 30 and then 60 days. Words you miss come back later in the same session and again next time.
 - **Decks.** Intermedio and Pasado are open from the start, and new words alternate between them. Avanzado unlocks at 60% of Intermedio, Callejero at 60% of Avanzado, or you can unlock either early.
-- **Pasado.** 48 high-use verbs in the preterite (fui), the perfect (he ido, which Madrid uses for anything today) and the imperfect (iba), including vosotros. Say the right verb in the wrong tense and the app tells you so. Starting with yo, tú and so on is fine.
+- **Pasado.** About 50 high-use verbs in the preterite (fui), the perfect (he ido, which Madrid uses for anything today) and the imperfect (iba), including vosotros. Say the right verb in the wrong tense and the app tells you so. Starting with yo, tú and so on is fine.
 - **Crude words** are tagged CRUDE and can be switched off in Ajustes.
 
 ## Phone setup tips
