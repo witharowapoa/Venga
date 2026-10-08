@@ -23,6 +23,16 @@ jobs:
         with:
           gradle-version: "8.9"
 
+      - name: Check every card is marked correctly
+        run: gradle testReleaseUnitTest --no-daemon --stacktrace
+
+      - name: Upload test report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: app/build/reports/tests/
+
       - name: Build the app
         run: gradle assembleRelease --no-daemon --stacktrace
 
@@ -33,14 +43,59 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: Venga-1.0.${{ github.run_number }}
+          name: apk
           path: dist/*.apk
+
+  phone-test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: apk
+          path: dist
+
+      - name: Enable KVM for the emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run the app on a virtual phone
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash ci/smoke.sh dist/Venga-1.0.${{ github.run_number }}.apk
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: shots/
+
+  release:
+    needs: [build, phone-test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: apk
+          path: dist
 
       - name: Publish a release you can download on your phone
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "v1.0.${{ github.run_number }}" dist/*.apk \
+            -R "${{ github.repository }}" \
             --title "Venga 1.0.${{ github.run_number }}" \
             --notes "Open this page on your phone, tap the .apk file to download, then open it to install." \
             --latest

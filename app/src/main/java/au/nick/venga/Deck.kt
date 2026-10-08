@@ -60,30 +60,10 @@ class Deck(context: Context, private val settings: SharedPreferences) {
 
     init {
         cards = context.assets.open("words.txt").bufferedReader(Charsets.UTF_8).useLines { lines ->
-            lines.mapNotNull { parse(it) }.distinctBy { it.id }.toList()
+            lines.mapNotNull { parseLine(it) }.distinctBy { it.id }.toList()
         }
         for (c in cards) states[c.id] = load(c.id)
     }
-
-    private fun parse(line: String): Card? {
-        val t = line.trim()
-        if (t.isEmpty() || t.startsWith("#")) return null
-        val p = t.split("|")
-        if (p.size < 3) return null
-        val level = p[0].trim().toIntOrNull() ?: return null
-        val en = p[1].trim()
-        val answers = p[2].split(";").map { it.trim() }.filter { it.isNotEmpty() }
-        if (en.isEmpty() || answers.isEmpty()) return null
-        val tag = p.getOrNull(3)?.trim() ?: ""
-        val note = p.getOrNull(4)?.trim() ?: ""
-        val regional = splitList(p.getOrNull(5))
-        val otherTense = splitList(p.getOrNull(6))
-        return Card("$level|$en", level, en, answers, tag, note, regional, otherTense)
-    }
-
-    private fun splitList(field: String?): List<String> =
-        field?.split(";")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
-
 
     private fun load(id: String): CardState {
         val raw = progress.getString("c:$id", null) ?: return CardState()
@@ -206,6 +186,26 @@ class Deck(context: Context, private val settings: SharedPreferences) {
     }
 
     companion object {
+        /** Parses one line of words.txt (see the format at the top of that file). */
+        fun parseLine(line: String): Card? {
+            val t = line.trim()
+            if (t.isEmpty() || t.startsWith("#")) return null
+            val p = t.split("|")
+            if (p.size < 3) return null
+            val level = p[0].trim().toIntOrNull() ?: return null
+            val en = p[1].trim()
+            val answers = p[2].split(";").map { it.trim() }.filter { it.isNotEmpty() }
+            if (en.isEmpty() || answers.isEmpty()) return null
+            val tag = p.getOrNull(3)?.trim() ?: ""
+            val note = p.getOrNull(4)?.trim() ?: ""
+            val regional = splitList(p.getOrNull(5))
+            val otherTense = splitList(p.getOrNull(6))
+            return Card("$level|$en", level, en, answers, tag, note, regional, otherTense)
+        }
+
+        private fun splitList(field: String?): List<String> =
+            field?.split(";")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
+
         /** Days until the next review for each box. */
         val INTERVAL_DAYS = longArrayOf(0, 1, 3, 7, 14, 30, 60)
         const val DAY = 86_400_000L

@@ -585,8 +585,10 @@ class MainActivity : Activity() {
             isSingleLine = true
             background = rounded(surface, 14, line)
             setPadding(dp(14), dp(12), dp(14), dp(12))
-            setOnEditorActionListener { v, actionId, _ ->
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
+            setOnEditorActionListener { v, actionId, event ->
+                val enterKey = event != null && event.keyCode == android.view.KeyEvent.KEYCODE_ENTER &&
+                    event.action == android.view.KeyEvent.ACTION_DOWN
+                if (actionId == EditorInfo.IME_ACTION_DONE || enterKey) {
                     submitTyped(v.text.toString()); true
                 } else false
             }
