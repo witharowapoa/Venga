@@ -81,6 +81,17 @@ jobs:
           name: screenshots
           path: shots/
 
+      - name: Save screenshots to the ci-screenshots branch
+        if: always()
+        run: |
+          mkdir -p shots && cd shots
+          git init -q -b ci-screenshots
+          git config user.name "Venga CI"
+          git config user.email "ci@users.noreply.github.com"
+          git add -A
+          git commit -qm "Screenshots from build ${{ github.run_number }}" || exit 0
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-screenshots
+
   release:
     needs: [build, phone-test]
     runs-on: ubuntu-latest

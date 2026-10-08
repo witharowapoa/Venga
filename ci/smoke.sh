@@ -8,10 +8,11 @@ PKG=au.nick.venga
 OUT=shots
 WORDS=app/src/main/assets/words.txt
 mkdir -p "$OUT"
+exec > >(tee -a "$OUT/run.txt") 2>&1
 FAILS=0
 
 log()  { echo "== $*"; }
-fail() { echo "FAIL: $*"; FAILS=$((FAILS + 1)); }
+fail() { echo "FAIL: $*"; echo "::error::$*"; FAILS=$((FAILS + 1)); }
 shot() { adb exec-out screencap -p > "$OUT/$1.png"; }
 dump() { adb shell uiautomator dump /sdcard/ui.xml >/dev/null 2>&1; adb pull /sdcard/ui.xml ui.xml >/dev/null 2>&1; }
 has()  { dump; python3 ci/ui.py has ui.xml "$1"; }
