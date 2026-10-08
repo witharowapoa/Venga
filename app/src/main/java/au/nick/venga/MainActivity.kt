@@ -6,6 +6,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.Typeface
@@ -37,18 +38,57 @@ import java.util.Locale
 class MainActivity : Activity() {
 
     // ---------- palette ----------
-    private val bg = Color.parseColor("#FBF6EE")
-    private val ink = Color.parseColor("#1F1A17")
-    private val muted = Color.parseColor("#6F665E")
-    private val line = Color.parseColor("#E8DFD2")
-    private val red = Color.parseColor("#C8102E")
-    private val redDark = Color.parseColor("#9E0B22")
-    private val redSoft = Color.parseColor("#FBE3E6")
-    private val green = Color.parseColor("#2E7D4F")
-    private val greenSoft = Color.parseColor("#E2F2E8")
-    private val amber = Color.parseColor("#A35F00")
-    private val amberSoft = Color.parseColor("#FCEFD9")
-    private val chipGrey = Color.parseColor("#F1EBE2")
+    // Spain's flag colours: rojo #AA151B and gualda (gold) #F1BF00. Set by applyPalette().
+    private var dark = false
+    private var bg = 0
+    private var surface = 0
+    private var ink = 0
+    private var muted = 0
+    private var line = 0
+    private var red = 0
+    private var redDark = 0
+    private var redSoft = 0
+    private var gold = 0
+    private var green = 0
+    private var greenSoft = 0
+    private var amber = 0
+    private var amberSoft = 0
+    private var chipGrey = 0
+
+    private fun c(hex: String) = Color.parseColor(hex)
+
+    /** Appearance setting: 0 = follow phone, 1 = light, 2 = dark. */
+    private fun applyPalette() {
+        dark = when (settings.getInt("appearance", 0)) {
+            1 -> false
+            2 -> true
+            else -> (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+        }
+        gold = c("#F1BF00")
+        if (dark) {
+            bg = c("#141110"); surface = c("#221D1B"); ink = c("#F5EFE6"); muted = c("#A99F94"); line = c("#3A322E")
+            red = c("#E5373F"); redDark = c("#AA151B"); redSoft = c("#3E1517")
+            green = c("#5CC48A"); greenSoft = c("#15301F"); amber = c("#F1BF00"); amberSoft = c("#3A2E05")
+            chipGrey = c("#2F2826")
+        } else {
+            bg = c("#FFF8EA"); surface = Color.WHITE; ink = c("#1F1A17"); muted = c("#6F665E"); line = c("#ECE0C8")
+            red = c("#AA151B"); redDark = c("#850F14"); redSoft = c("#FBE2E3")
+            green = c("#2E7D4F"); greenSoft = c("#E2F2E8"); amber = c("#7A5900"); amberSoft = c("#FFF0B8")
+            chipGrey = c("#F4ECDC")
+        }
+        window.statusBarColor = redDark
+        window.navigationBarColor = bg
+        @Suppress("DEPRECATION")
+        window.decorView.systemUiVisibility =
+            if (dark) 0 else View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
+    }
+
+    /** A thin red-gold-red band, like the flag. */
+    private fun flagStripe(height: Int = 6): LinearLayout = column().apply {
+        listOf(red, gold, gold, red).forEach { col ->
+            addView(View(this@MainActivity).apply { setBackgroundColor(col) }, LinearLayout.LayoutParams(match, dp(height) / 2))
+        }
+    }
 
     private val match = ViewGroup.LayoutParams.MATCH_PARENT
     private val wrap = ViewGroup.LayoutParams.WRAP_CONTENT
@@ -99,9 +139,27 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         settings = getSharedPreferences("settings", MODE_PRIVATE)
+        applyPalette()
         deck = Deck(this, settings)
         tts = TextToSpeech(applicationContext) { status -> handler.post { onTtsInit(status) } }
         showHome()
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        val wasDark = dark
+        applyPalette()
+        if (dark != wasDark) redraw()
+    }
+
+    /** Rebuild the current screen in the new colours (a card already answered keeps its result until Next). */
+    private fun redraw() {
+        when (screen) {
+            Screen.HOME -> showHome()
+            Screen.WORDS -> showWords()
+            Screen.SUMMARY -> showSummary()
+            Screen.PRACTICE -> if (!answered) showCard()
+        }
     }
 
     override fun onPause() {
@@ -189,7 +247,7 @@ class MainActivity : Activity() {
     private fun column(): LinearLayout = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
     private fun panel(): LinearLayout = column().apply {
-        background = rounded(Color.WHITE, 18, line)
+        background = rounded(surface, 18, line)
         setPadding(dp(18), dp(16), dp(18), dp(16))
     }
 
@@ -224,11 +282,12 @@ class MainActivity : Activity() {
         val root = page()
 
         root.addView(label("¡Venga!", 40f, red, true))
-        root.addView(label("Madrid Spanish, one card at a time.", 16f, muted), lp(top = 2))
+        root.addView(flagStripe(), lp(dp(72), wrap, top = 4))
+        root.addView(label("Madrid Spanish, one card at a time.", 16f, muted), lp(top = 8))
 
         val now = System.currentTimeMillis()
         val stats = row().apply {
-            background = rounded(Color.WHITE, 18, line)
+            background = rounded(surface, 18, line)
             setPadding(dp(8), dp(16), dp(8), dp(16))
         }
         stats.addView(statCell(deck.dueCount(now), "due"), lp(0, wrap, weight = 1f))
@@ -250,7 +309,7 @@ class MainActivity : Activity() {
         root.addView(sectionTitle("Niveles"), lp(top = 30))
         for (level in Levels.all) root.addView(levelPanel(level), lp(top = 10))
 
-        root.addView(button("Word list", Color.WHITE, ink, line) { showWords() }, lp(top = 16))
+        root.addView(button("Word list", surface, ink, line) { showWords() }, lp(top = 16))
 
         // Settings
         root.addView(sectionTitle("Ajustes"), lp(top = 30))
@@ -260,6 +319,9 @@ class MainActivity : Activity() {
         s.addView(switchRow("Include crude words", "include_vulgar", true), lp(top = 10))
         s.addView(switchRow("Say the answer after each card", "auto_play", true), lp(top = 4))
         s.addView(cycleRow("Speaking speed", "speech_rate", listOf(75, 90, 100), 90) { "$it%" }, lp(top = 10))
+        s.addView(cycleRow("Appearance", "appearance", listOf(0, 1, 2), 0) {
+            when (it) { 1 -> "Light"; 2 -> "Dark"; else -> "Match phone" }
+        }, lp(top = 10))
         val vh = column()
         voiceHolder = vh
         s.addView(vh, lp(top = 10))
@@ -297,7 +359,7 @@ class MainActivity : Activity() {
         val bar = ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal).apply {
             max = 100
             progress = pct
-            progressTintList = ColorStateList.valueOf(if (unlocked) red else muted)
+            progressTintList = ColorStateList.valueOf(if (unlocked) gold else muted)
             progressBackgroundTintList = ColorStateList.valueOf(line)
         }
         p.addView(bar, lp(top = 10))
@@ -310,7 +372,7 @@ class MainActivity : Activity() {
                 label("Unlocks when $need% of ${Levels.name(pre)} is learned.", 13f, muted),
                 lp(top = 8)
             )
-            p.addView(button("Unlock now", Color.WHITE, red, red, 14f) {
+            p.addView(button("Unlock now", surface, red, red, 14f) {
                 deck.unlock(level)
                 showHome()
             }.apply { setPadding(dp(14), dp(8), dp(14), dp(8)) }, lp(wrap, wrap, top = 8))
@@ -329,7 +391,8 @@ class MainActivity : Activity() {
             val idx = options.indexOf(now)
             val next = options[(idx + 1).mod(options.size)]
             settings.edit().putInt(key, next).apply()
-            if (key == "session_size" || key == "new_per_session") showHome() else pill.text = fmt(next)
+            if (key == "appearance") applyPalette()
+            if (key == "session_size" || key == "new_per_session" || key == "appearance") showHome() else pill.text = fmt(next)
             if (key == "speech_rate") speak("Hola, ¿qué tal?", slow = false)
         }
         r.addView(pill)
@@ -342,7 +405,7 @@ class MainActivity : Activity() {
         setTextColor(ink)
         isChecked = settings.getBoolean(key, default)
         val states = arrayOf(intArrayOf(android.R.attr.state_checked), intArrayOf())
-        thumbTintList = ColorStateList(states, intArrayOf(red, Color.WHITE))
+        thumbTintList = ColorStateList(states, intArrayOf(red, if (dark) muted else Color.WHITE))
         trackTintList = ColorStateList(states, intArrayOf(redSoft, line))
         setOnCheckedChangeListener { _, checked ->
             settings.edit().putBoolean(key, checked).apply()
@@ -373,7 +436,7 @@ class MainActivity : Activity() {
             ttsReady -> holder.addView(label("Using your phone's Spain-Spanish voice.", 13f, muted))
             ttsFailed -> {
                 holder.addView(label("No Spain-Spanish voice found on this phone.", 14f, red))
-                holder.addView(button("Install Spanish (Spain) voice", Color.WHITE, red, red, 14f) {
+                holder.addView(button("Install Spanish (Spain) voice", surface, red, red, 14f) {
                     try {
                         startActivity(Intent(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA))
                     } catch (e: Exception) {
@@ -447,14 +510,14 @@ class MainActivity : Activity() {
         val bar = ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal).apply {
             max = queue.size
             progress = pos
-            progressTintList = ColorStateList.valueOf(red)
+            progressTintList = ColorStateList.valueOf(gold)
             progressBackgroundTintList = ColorStateList.valueOf(line)
         }
         root.addView(bar, lp(top = 4))
 
         // the card
         val cardView = column().apply {
-            background = rounded(Color.WHITE, 22, line)
+            background = rounded(surface, 22, line)
             setPadding(dp(22), dp(20), dp(22), dp(26))
             elevation = dp(2).toFloat()
         }
@@ -480,6 +543,7 @@ class MainActivity : Activity() {
             background = GradientDrawable().apply {
                 shape = GradientDrawable.OVAL
                 setColor(red)
+                setStroke(dp(4), gold)
             }
             elevation = dp(4).toFloat()
             isClickable = true
@@ -501,9 +565,9 @@ class MainActivity : Activity() {
         c.addView(partial, lp(top = 4))
 
         val alt = row()
-        alt.addView(button("⌨  Type it", Color.WHITE, ink, line, 14f) { showTyping() }, lp(0, wrap, weight = 1f))
+        alt.addView(button("⌨  Type it", surface, ink, line, 14f) { showTyping() }, lp(0, wrap, weight = 1f))
         alt.addView(View(this), LinearLayout.LayoutParams(dp(10), 1))
-        alt.addView(button("Show answer", Color.WHITE, ink, line, 14f) {
+        alt.addView(button("Show answer", surface, ink, line, 14f) {
             stopListening()
             onAnswer(emptyList())
         }, lp(0, wrap, weight = 1f))
@@ -519,7 +583,7 @@ class MainActivity : Activity() {
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
             imeOptions = EditorInfo.IME_ACTION_DONE
             isSingleLine = true
-            background = rounded(Color.WHITE, 14, line)
+            background = rounded(surface, 14, line)
             setPadding(dp(14), dp(12), dp(14), dp(12))
             setOnEditorActionListener { v, actionId, _ ->
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
@@ -529,7 +593,7 @@ class MainActivity : Activity() {
         }
         typeInput = input
         tb.addView(input)
-        tb.addView(button("Check", ink, Color.WHITE) { submitTyped(input.text.toString()) }, lp(top = 8))
+        tb.addView(button("Check", ink, bg) { submitTyped(input.text.toString()) }, lp(top = 8))
         c.addView(tb, lp(top = 14))
 
         root.addView(c, lp(top = 22))
@@ -616,7 +680,7 @@ class MainActivity : Activity() {
         val speakRow = row()
         speakRow.addView(button("🔊  Escuchar", red, Color.WHITE, size = 15f) { speak(card.primary, slow = false) }, lp(0, wrap, weight = 1f))
         speakRow.addView(View(this), LinearLayout.LayoutParams(dp(10), 1))
-        speakRow.addView(button("🐢  Despacio", Color.WHITE, red, red, 15f) { speak(card.primary, slow = true) }, lp(0, wrap, weight = 1f))
+        speakRow.addView(button("🐢  Despacio", surface, red, red, 15f) { speak(card.primary, slow = true) }, lp(0, wrap, weight = 1f))
         p.addView(speakRow, lp(top = 14))
 
         if (card.note.isNotBlank()) p.addView(label(card.note, 14f, ink), lp(top = 12))
@@ -625,10 +689,10 @@ class MainActivity : Activity() {
         val nav = row()
         val wrongish = result.verdict != Verdict.CORRECT && result.verdict != Verdict.CLOSE
         if (wrongish && heard.isNotBlank()) {
-            nav.addView(button("I was right", Color.WHITE, ink, line, 14f) { overrideCorrect(card) }, lp(0, wrap, weight = 1f))
+            nav.addView(button("I was right", surface, ink, line, 14f) { overrideCorrect(card) }, lp(0, wrap, weight = 1f))
             nav.addView(View(this), LinearLayout.LayoutParams(dp(10), 1))
         }
-        nav.addView(button("Siguiente  →", ink, Color.WHITE) { next() }, lp(0, wrap, weight = 1.4f))
+        nav.addView(button("Siguiente  →", ink, bg) { next() }, lp(0, wrap, weight = 1.4f))
         box.addView(nav, lp(top = 14))
 
         if (settings.getBoolean("auto_play", true)) speak(card.primary, slow = false)
@@ -661,6 +725,7 @@ class MainActivity : Activity() {
         val total = sessionSeen.size
         val firstTry = sessionSeen.count { it !in missed }
         root.addView(label("¡Hecho!", 40f, red, true))
+        root.addView(flagStripe(), lp(dp(72), wrap, top = 4))
         root.addView(label("$firstTry of $total right first time.", 18f, ink), lp(top = 6))
         if (extraPractice) root.addView(label("Extra practice: everything due was already done.", 14f, muted), lp(top = 4))
 
@@ -671,7 +736,7 @@ class MainActivity : Activity() {
         }
 
         root.addView(button("Another round", red, Color.WHITE, size = 17f) { startSession() }, lp(top = 26))
-        root.addView(button("Home", Color.WHITE, ink, line) { showHome() }, lp(top = 10))
+        root.addView(button("Home", surface, ink, line) { showHome() }, lp(top = 10))
     }
 
     // =====================================================================
@@ -701,7 +766,7 @@ class MainActivity : Activity() {
 
     private fun wordRow(card: Card): LinearLayout {
         val r = row().apply {
-            background = rounded(Color.WHITE, 14, line)
+            background = rounded(surface, 14, line)
             setPadding(dp(14), dp(10), dp(8), dp(10))
         }
         val text = column()
