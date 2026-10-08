@@ -1,0 +1,14 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=au.nick.venga/.MainActivity }
+== Home screen
+== Card 1: correct typed answer
+card: 'you went (tú, last night) · ir' → typing 'fuiste'
+== Card 2: wrong answer
+== Card 3: mic button (no real speech here, must not crash)
+== Card 3: show answer
+== Back home, word list
+== Dark mode
+card: 'the computer' → typing 'el%sordenador'
+== Crash check
+Smoke test finished with 0 failure(s)
