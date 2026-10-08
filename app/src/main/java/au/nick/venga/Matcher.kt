@@ -3,7 +3,7 @@ package au.nick.venga
 import java.text.Normalizer
 import java.util.Locale
 
-enum class Verdict { CORRECT, CLOSE, REGIONAL, WRONG }
+enum class Verdict { CORRECT, CLOSE, REGIONAL, TENSE, WRONG }
 
 data class Check(val verdict: Verdict, val heard: String)
 
@@ -15,6 +15,10 @@ data class Check(val verdict: Verdict, val heard: String)
 object Matcher {
 
     private val articles = setOf("el", "la", "los", "las", "un", "una", "unos", "unas", "lo")
+    private val pronouns = setOf(
+        "yo", "tu", "ella", "usted", "nosotros", "nosotras",
+        "vosotros", "vosotras", "ellos", "ellas", "ustedes"
+    )
     private val spain = Locale("es", "ES")
 
     fun normalize(input: String): String {
@@ -22,8 +26,10 @@ object Matcher {
         val stripped = Normalizer.normalize(lower, Normalizer.Form.NFD)
             .replace(Regex("\\p{M}+"), "")
         val cleaned = stripped.replace(Regex("[^a-z0-9* ]+"), " ").trim().replace(Regex("\\s+"), " ")
-        val words = cleaned.split(" ").filter { it.isNotEmpty() }
-        return if (words.size > 1 && words[0] in articles) words.drop(1).joinToString(" ") else cleaned
+        var words = cleaned.split(" ").filter { it.isNotEmpty() }
+        // "él fue" → "el fue" → "fue"; "yo fui" → "fui"
+        if (words.size > 1 && (words[0] in articles || words[0] in pronouns)) words = words.drop(1)
+        return words.joinToString(" ")
     }
 
     private fun same(heard: String, answer: String): Boolean {
@@ -78,6 +84,7 @@ object Matcher {
         if (options.isEmpty()) return Check(Verdict.WRONG, "")
         val answers = card.answers.map { normalize(it) }
         val regional = card.regional.map { normalize(it) }
+        val otherTense = card.otherTense.map { normalize(it) }
 
         for (h in options) {
             val hn = normalize(h)
@@ -89,7 +96,14 @@ object Matcher {
         }
         for (h in options) {
             val hn = normalize(h)
-            if (answers.any { levenshtein(hn, it) <= tolerance(it.length) }) return Check(Verdict.CLOSE, h)
+            if (otherTense.any { hn == it || wildcard(hn, it) }) return Check(Verdict.TENSE, h)
+        }
+        // Near-miss spelling only for vocabulary; for verbs one letter is often a different person (comí / comió).
+        if (card.otherTense.isEmpty()) {
+            for (h in options) {
+                val hn = normalize(h)
+                if (answers.any { levenshtein(hn, it) <= tolerance(it.length) }) return Check(Verdict.CLOSE, h)
+            }
         }
         return Check(Verdict.WRONG, options.first())
     }

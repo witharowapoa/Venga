@@ -303,10 +303,11 @@ class MainActivity : Activity() {
         p.addView(bar, lp(top = 10))
         p.addView(label("$learned of $total learned · $pct%", 13f, muted), lp(top = 2))
 
-        if (!unlocked) {
+        val pre = Levels.prerequisite(level)
+        if (!unlocked && pre != null) {
             val need = (Levels.UNLOCK_SHARE * 100).toInt()
             p.addView(
-                label("Unlocks when $need% of ${Levels.name(level - 1)} is learned.", 13f, muted),
+                label("Unlocks when $need% of ${Levels.name(pre)} is learned.", 13f, muted),
                 lp(top = 8)
             )
             p.addView(button("Unlock now", Color.WHITE, red, red, 14f) {
@@ -564,8 +565,8 @@ class MainActivity : Activity() {
 
         when (result.verdict) {
             Verdict.CORRECT, Verdict.CLOSE -> deck.recordCorrect(card)
-            Verdict.WRONG, Verdict.REGIONAL -> {
-                if (result.verdict == Verdict.WRONG) deck.recordWrong(card) else deck.recordRegional(card)
+            Verdict.WRONG, Verdict.REGIONAL, Verdict.TENSE -> {
+                if (result.verdict == Verdict.WRONG) deck.recordWrong(card) else deck.recordNearMiss(card)
                 missed.add(card.id)
                 val n = requeues[card.id] ?: 0
                 if (n < 2) {
@@ -590,6 +591,7 @@ class MainActivity : Activity() {
             Verdict.CORRECT -> Triple("✓  ¡Muy bien!", green, greenSoft)
             Verdict.CLOSE -> Triple("✓  Close enough", green, greenSoft)
             Verdict.REGIONAL -> Triple("≈  Right idea, wrong city", amber, amberSoft)
+            Verdict.TENSE -> Triple("≈  Right verb, wrong tense", amber, amberSoft)
             Verdict.WRONG -> if (heard.isBlank()) Triple("Here's the answer", ink, chipGrey) else Triple("✗  Not quite", red, redSoft)
         }
 
@@ -601,6 +603,7 @@ class MainActivity : Activity() {
         if (heard.isNotBlank()) p.addView(label("You said: “$heard”", 15f, muted), lp(top = 4))
         val lead = when (result.verdict) {
             Verdict.REGIONAL -> "That's used outside Spain. In Madrid they say:"
+            Verdict.TENSE -> "This one needs:"
             Verdict.CLOSE -> "The exact answer:"
             else -> "In Madrid:"
         }
@@ -620,7 +623,7 @@ class MainActivity : Activity() {
         box.addView(p)
 
         val nav = row()
-        val wrongish = result.verdict == Verdict.WRONG || result.verdict == Verdict.REGIONAL
+        val wrongish = result.verdict != Verdict.CORRECT && result.verdict != Verdict.CLOSE
         if (wrongish && heard.isNotBlank()) {
             nav.addView(button("I was right", Color.WHITE, ink, line, 14f) { overrideCorrect(card) }, lp(0, wrap, weight = 1f))
             nav.addView(View(this), LinearLayout.LayoutParams(dp(10), 1))

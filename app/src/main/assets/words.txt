@@ -213,3 +213,557 @@
 3|to cram (study hard)|empollar|s||
 3|a freeloader / a sponger|un gorrón;una gorrona|s||
 3|a chat / a natter|un palique;estar de palique|s||
+
+# ---------- 1 · INTERMEDIO (more) ----------
+1|the Spanish omelette|la tortilla;la tortilla de patatas;la tortilla española||Madrid argues endlessly about onion or no onion.|
+1|a slice of tortilla (bar portion)|un pincho de tortilla;un pincho||Un pincho = a small bar portion.|
+1|the croquettes|las croquetas||Croquetas de jamón: a Madrid bar essential.|
+1|cured ham|el jamón;el jamón serrano||Jamón ibérico is the top grade.|
+1|the cheese|el queso|||
+1|the olives|las aceitunas|||
+1|the prawns|las gambas||Gambas al ajillo = garlic prawns.|los camarones
+1|the mushrooms|los champiñones;las setas|||los hongos
+1|the chicken|el pollo|||
+1|the dessert|el postre|||
+1|the set lunch menu|el menú del día;el menú||The Madrid weekday lunch deal: two courses, bread, drink and dessert.|
+1|still water|agua sin gas;agua natural|||
+1|sparkling water|agua con gas|||
+1|a glass of red wine|un tinto;un vino tinto;una copa de tinto|||
+1|a mixed drink / a spirit and mixer|una copa;un cubata|s|Ir de copas = to go out drinking.|un trago
+1|the ice|el hielo|||
+1|toast (for breakfast)|una tostada;una tostada con tomate||Tostada con tomate y aceite: the Madrid café breakfast.|
+1|lunch (the main meal, around 2 or 3pm)|la comida||In Spain la comida is lunch.|el almuerzo
+1|dinner|la cena||Madrileños eat dinner around 9:30 or 10pm.|
+1|to have lunch|comer||In Spain comer usually means lunch.|almorzar
+1|to have dinner|cenar|||
+1|the afternoon snack|la merienda||Merendar = to have the afternoon snack.|
+1|the supermarket|el súper;el supermercado|||
+1|the chemist (pharmacy)|la farmacia|||
+1|the bakery|la panadería|||
+1|the shop|la tienda|||
+1|the shopping centre|el centro comercial|||el mall
+1|the bag|la bolsa|||
+1|the receipt|el ticket;el tique;el recibo|||
+1|the change (money back)|la vuelta;el cambio||Quédate con la vuelta = keep the change.|el vuelto
+1|in cash|en efectivo;en metálico|||
+1|the bank card|la tarjeta|||
+1|cheap|barato;barata|||
+1|expensive|caro;cara|||
+1|the sales (shops)|las rebajas|||
+1|the bedroom|la habitación;el dormitorio;el cuarto|||la recámara
+1|the kitchen|la cocina|||
+1|the bathroom|el baño;el cuarto de baño|||
+1|the washing machine|la lavadora|||
+1|the dishwasher|el lavavajillas;el lavaplatos|||
+1|the microwave|el microondas|||
+1|the heating|la calefacción|||
+1|the air conditioning|el aire acondicionado;el aire||Non-negotiable in a Madrid August.|
+1|the window shutter (roller blind)|la persiana|||
+1|the building doorman|el portero;la portera||Many Madrid buildings still have one.|
+1|the flatmate|el compañero de piso;la compañera de piso|||
+1|the neighbour|el vecino;la vecina|||
+1|the keys|las llaves|||
+1|the rubbish|la basura|||
+1|to tidy up|recoger;ordenar|||
+1|to clean|limpiar|||
+1|the office|la oficina|||
+1|the meeting|la reunión|||
+1|the email|el correo;el email;el correo electrónico;el mail|||
+1|the colleague (at work)|el compañero;la compañera|||
+1|the salary|el sueldo;el salario|||
+1|the holidays (vacation)|las vacaciones|||
+1|the public holiday|el festivo;el día festivo|||el feriado
+1|the long weekend (extra day off)|el puente||Hacer puente = take the day between a holiday and the weekend.|
+1|the timetable / opening hours|el horario|||
+1|the appointment|la cita||Pedir cita = to make an appointment.|
+1|the lawyer|el abogado;la abogada|||
+1|the court (law)|el juzgado;el tribunal|||
+1|the contract|el contrato|||
+1|to sign|firmar|||
+1|the deadline|el plazo;la fecha límite|||
+1|to be in a hurry|tener prisa|||estar apurado
+1|to be late|llegar tarde|||
+1|on time|a tiempo;puntual|||
+1|the street|la calle|||
+1|the square (plaza)|la plaza||Plaza Mayor, Puerta del Sol…|
+1|the corner|la esquina|||
+1|the traffic lights|el semáforo|||
+1|the commuter train|el cercanías||Madrid's suburban rail network.|
+1|the station|la estación|||
+1|the exit / way out|la salida|||
+1|the entrance|la entrada|||
+1|to get off (the bus or train)|bajarse;bajar|||
+1|to get on (the bus or train)|subirse;subir|||
+1|to change lines (metro)|hacer transbordo;el transbordo|||
+1|on foot|andando;a pie||Andando is very Spain.|caminando
+1|to walk|andar;caminar|||
+1|the park|el parque||El Retiro is Madrid's favourite.|
+1|the city centre|el centro|||
+1|nearby|cerca|||
+1|far away|lejos|||
+1|straight ahead|todo recto;recto||Spain says todo recto.|derecho;todo derecho
+1|tomorrow morning|mañana por la mañana|||
+1|the day before yesterday|anteayer;antes de ayer|||antier
+1|the day after tomorrow|pasado mañana|||
+1|the small hours (after midnight)|la madrugada||A las tres de la madrugada.|
+1|it's very hot|hace mucho calor|||
+1|it's cold|hace frío|||
+1|it's raining|está lloviendo;llueve|||
+1|to be tired|estar cansado;estar cansada|||
+1|to be bored|estar aburrido;estar aburrida;aburrirse|||
+1|to be happy (right now)|estar contento;estar contenta|||
+1|to be worried|estar preocupado;estar preocupada|||
+1|no worries / it's fine|no pasa nada||Madrid's favourite reassurance.|
+1|I don't mind / it's all the same to me|me da igual;da igual|||
+1|of course|claro;por supuesto|||
+1|really? / seriously?|en serio|||
+1|see you later|hasta luego||Madrileños say it constantly, even to strangers.|
+1|see you (around)|nos vemos|||
+1|my goodness!|madre mía|||
+1|what a shame|qué pena;qué lástima|||
+1|sorry / excuse me (to get past)|perdona;perdón|||
+1|it's on me (I'm paying)|invito yo;te invito||Invitar = to shout someone a drink or meal.|
+1|to split the bill|pagar a medias;ir a medias;pagar a escote||A escote = everyone chips in. Very Spain.|
+1|mate / buddy|colega|s|Colega is very Spain.|
+1|the birthday|el cumpleaños;el cumple|||
+1|the present (gift)|el regalo|||
+1|to celebrate|celebrar|||
+1|to get married|casarse|||
+1|to have fun|divertirse;pasarlo bien|||
+1|to rest|descansar|||
+1|to wake up|despertarse|||
+1|to have a shower|ducharse|||bañarse
+1|to get dressed|vestirse|||
+1|to go to bed|acostarse|||
+1|to fall asleep|dormirse|||
+1|to forget|olvidar;olvidarse||Se me ha olvidado = I've forgotten.|
+1|to remember|acordarse;recordar||¿Te acuerdas?|
+1|to choose|elegir|||
+1|to change|cambiar|||
+1|to help|ayudar|||
+1|to wait|esperar|||
+1|to need|necesitar|||
+1|to send|enviar;mandar|||
+1|to call (on the phone)|llamar|||
+1|to tell (a story)|contar|||
+1|to ask (a question)|preguntar|||
+1|to answer|contestar;responder|||
+1|to try (to do something)|intentar|||
+1|to seem|parecer|||
+1|to worry|preocuparse|||
+1|to hurry up|darse prisa||¡Date prisa!|apurarse
+1|to look after|cuidar|||
+1|to fix (repair)|arreglar|||
+1|to break|romper|||
+
+# ---------- 2 · AVANZADO (more) ----------
+2|it's not that big a deal|no es para tanto|||
+2|to have a brilliant time|pasarlo bomba;pasarlo genial|s||
+2|to beat around the bush|andarse por las ramas|||
+2|to put your foot in it|meter la pata|s||
+2|to cost an absolute fortune|costar un riñón|s||
+2|a piece of cake (easy)|está chupado;pan comido|s|Está chupado is very Spain.|
+2|to have your head in the clouds|estar en las nubes|||
+2|to stick your nose in|meter las narices|s||
+2|to be up to your eyeballs (busy)|estar hasta arriba|s||
+2|to take it easy|tomárselo con calma|||
+2|to make a scene|montar un pollo;montar un número|s|Montar un pollo is very Madrid.|
+2|to push in (a queue) / to sneak in|colarse|s|¡No te cueles!|
+2|to have a sweet tooth|ser goloso;ser golosa|||
+2|the long chat at the table after a meal|la sobremesa||A sacred Spanish custom.|
+2|to go bar-hopping|ir de bar en bar|||
+2|to go out partying|salir de fiesta;irse de marcha;salir de marcha|s|De marcha = out on the town.|
+2|the nightlife|la marcha;la vida nocturna|s|Madrid tiene mucha marcha.|
+2|to bump into (someone)|encontrarse con|||
+2|to let (someone) know|avisar||Avísame = let me know.|
+2|to be embarrassed|me da vergüenza;dar vergüenza|||
+2|second-hand embarrassment (cringe)|vergüenza ajena;dar vergüenza ajena|||
+2|to be scared|tener miedo;dar miedo|||
+2|to really look forward to|tener ganas de;tener muchas ganas de||Tengo muchas ganas de verte.|
+2|to take charge of|encargarse de|||
+2|to make a decision|tomar una decisión|||
+2|to sort out / to solve|solucionar;resolver|||
+2|to postpone|aplazar;posponer|||
+2|to cancel|cancelar;anular|||
+2|to fill in (a form)|rellenar|||llenar
+2|the paperwork (bureaucracy)|el papeleo|||
+2|it depends|depende|||
+2|on the other hand|en cambio;por otro lado|||
+2|anyway… (moving on)|en fin|||
+2|by the way|por cierto|||
+2|at least|por lo menos;al menos|||
+2|actually / in fact|de hecho;en realidad|||
+2|suddenly|de repente|||
+2|little by little|poco a poco|||
+2|now and then|de vez en cuando|||
+2|just in case|por si acaso|||
+2|not great / so-so|regular;así así||In Spain regular means "not great".|
+2|to be hungover|tener resaca;estar de resaca|||
+2|to have a crush on|estar colado por;estar colada por|s||
+2|to drive someone up the wall|sacar de quicio;poner de los nervios|||
+2|a round (of drinks)|una ronda||Esta ronda la pago yo.|
+2|tipsy|contentillo;contentilla;piripi|s||
+2|security guard / bouncer (slang)|el segurata|s||
+2|to get worked up|rayarse|s|No te rayes = don't overthink it. Very Madrid.|
+2|to be worth it|merecer la pena;valer la pena||Merece la pena is the Spain form.|
+2|to fancy (doing something) a lot|tener un montón de ganas;tener mogollón de ganas|s||
+
+# ---------- 3 · CALLEJERO (more) ----------
+3|a ton of money|una pasta gansa|s||
+3|loaded (rich)|forrado;forrada;estar forrado|s||
+3|to hit on someone|tirar los tejos|s||
+3|to pull / get off with someone|pillar cacho|s|Very Spain.|
+3|a real pain / so boring (crude)|un coñazo;qué coñazo;dar el coñazo|v||
+3|to pester / go on and on at someone|dar la brasa;dar la lata|s|Dar la brasa is very Madrid.|
+3|an annoying, clingy person|un pesado;una pesada;un plasta|s||
+3|bullshit (talk) (crude)|gilipolleces;decir gilipolleces|v||
+3|blind drunk|ir ciego;ir ciega;estar ciego|s||
+3|to throw up (slang)|potar|s||
+3|wrecked / knackered|hecho polvo;estar hecho polvo;estar reventado|s||
+3|to sleep / crash out (slang)|sobar|s|Me voy a sobar.|
+3|to eat (slang)|jalar;papear|s||
+3|a cigarette (slang)|un piti;un pitillo|s||
+3|bro (current Madrid youth slang)|tete;bro|s|Tete is very Madrid right now.|
+3|bad vibes|mal rollo;qué mal rollo|s||
+3|good vibes|buen rollo|s||
+3|what a cock-up (crude)|una cagada;qué cagada|v||
+3|a heap of junk (old car, gadget)|un cacharro;una cafetera|s||
+3|a cheeky so-and-so (shameless)|caradura;un caradura|s||
+3|to lose it / go nuts|flipar en colores|s|Flipar en colores = to be totally blown away.|
+3|to be totally into something|estar enganchado;estar enganchada|s||
+3|shut your trap|cierra el pico|s||
+3|to be fed up to the back teeth (very crude)|estar hasta el coño|v|Very crude.|
+
+# ---------- 4 · PASADO (past-tense verbs) ----------
+4|I went (yesterday) · ir|fui||Preterite: a finished time (ayer, el sábado).||he ido;iba
+4|you went (tú, last night) · ir|fuiste||Preterite: a finished time (ayer, el sábado).||has ido;ibas
+4|he went (on Saturday) · ir|fue||Preterite: a finished time (ayer, el sábado).||ha ido;iba
+4|we went (last week) · ir|fuimos||Preterite: a finished time (ayer, el sábado).||hemos ido;íbamos
+4|you all went (vosotros, last summer) · ir|fuisteis||Vosotros: Spain's everyday 'you all'.||habéis ido;ibais
+4|I've been / gone (today) · ir|he ido||Madrid uses the perfect for anything today or this week.||fui;iba
+4|I used to go · ir|iba||Imperfect: habits and background in the past.||fui;he ido
+4|I had (yesterday) · tener|tuve||Preterite: a finished time (ayer, el sábado).||he tenido;tenía
+4|you had (tú, last night) · tener|tuviste||Preterite: a finished time (ayer, el sábado).||has tenido;tenías
+4|she had (on Saturday) · tener|tuvo||Preterite: a finished time (ayer, el sábado).||ha tenido;tenía
+4|we had (last week) · tener|tuvimos||Preterite: a finished time (ayer, el sábado).||hemos tenido;teníamos
+4|you all had (vosotros, last summer) · tener|tuvisteis||Vosotros: Spain's everyday 'you all'.||habéis tenido;teníais
+4|I've had (today) · tener|he tenido||Madrid uses the perfect for anything today or this week.||tuve;tenía
+4|I used to have · tener|tenía||Imperfect: habits and background in the past.||tuve;he tenido
+4|I did / made (yesterday) · hacer|hice||Preterite: a finished time (ayer, el sábado).||he hecho;hacía
+4|you did / made (tú, last night) · hacer|hiciste||Preterite: a finished time (ayer, el sábado).||has hecho;hacías
+4|he did / made (on Saturday) · hacer|hizo||Preterite: a finished time (ayer, el sábado).||ha hecho;hacía
+4|we did / made (last week) · hacer|hicimos||Preterite: a finished time (ayer, el sábado).||hemos hecho;hacíamos
+4|you all did / made (vosotros, last summer) · hacer|hicisteis||Vosotros: Spain's everyday 'you all'.||habéis hecho;hacíais
+4|I've done / made (today) · hacer|he hecho||Madrid uses the perfect for anything today or this week.||hice;hacía
+4|I used to do / make · hacer|hacía||Imperfect: habits and background in the past.||hice;he hecho
+4|I said (yesterday) · decir|dije||Preterite: a finished time (ayer, el sábado).||he dicho;decía
+4|you said (tú, last night) · decir|dijiste||Preterite: a finished time (ayer, el sábado).||has dicho;decías
+4|she said (on Saturday) · decir|dijo||Preterite: a finished time (ayer, el sábado).||ha dicho;decía
+4|we said (last week) · decir|dijimos||Preterite: a finished time (ayer, el sábado).||hemos dicho;decíamos
+4|you all said (vosotros, last summer) · decir|dijisteis||Vosotros: Spain's everyday 'you all'.||habéis dicho;decíais
+4|I've said (today) · decir|he dicho||Madrid uses the perfect for anything today or this week.||dije;decía
+4|I used to say · decir|decía||Imperfect: habits and background in the past.||dije;he dicho
+4|I managed to (yesterday) · poder|pude||Preterite: a finished time (ayer, el sábado).||he podido;podía
+4|you managed to (tú, last night) · poder|pudiste||Preterite: a finished time (ayer, el sábado).||has podido;podías
+4|he managed to (on Saturday) · poder|pudo||Preterite: a finished time (ayer, el sábado).||ha podido;podía
+4|we managed to (last week) · poder|pudimos||Preterite: a finished time (ayer, el sábado).||hemos podido;podíamos
+4|you all managed to (vosotros, last summer) · poder|pudisteis||Vosotros: Spain's everyday 'you all'.||habéis podido;podíais
+4|I've been able to (today) · poder|he podido||Madrid uses the perfect for anything today or this week.||pude;podía
+4|I could (back then) · poder|podía||Imperfect: habits and background in the past.||pude;he podido
+4|I wanted (yesterday) · querer|quise||Preterite: a finished time (ayer, el sábado).||he querido;quería
+4|you wanted (tú, last night) · querer|quisiste||Preterite: a finished time (ayer, el sábado).||has querido;querías
+4|she wanted (on Saturday) · querer|quiso||Preterite: a finished time (ayer, el sábado).||ha querido;quería
+4|we wanted (last week) · querer|quisimos||Preterite: a finished time (ayer, el sábado).||hemos querido;queríamos
+4|you all wanted (vosotros, last summer) · querer|quisisteis||Vosotros: Spain's everyday 'you all'.||habéis querido;queríais
+4|I've wanted (today) · querer|he querido||Madrid uses the perfect for anything today or this week.||quise;quería
+4|I wanted (back then, ongoing) · querer|quería||Imperfect: habits and background in the past.||quise;he querido
+4|I found out (yesterday) · saber|supe||Preterite: a finished time (ayer, el sábado).||he sabido;sabía
+4|you found out (tú, last night) · saber|supiste||Preterite: a finished time (ayer, el sábado).||has sabido;sabías
+4|he found out (on Saturday) · saber|supo||Preterite: a finished time (ayer, el sábado).||ha sabido;sabía
+4|we found out (last week) · saber|supimos||Preterite: a finished time (ayer, el sábado).||hemos sabido;sabíamos
+4|you all found out (vosotros, last summer) · saber|supisteis||Vosotros: Spain's everyday 'you all'.||habéis sabido;sabíais
+4|I knew (back then) · saber|sabía||Imperfect: habits and background in the past.||supe;he sabido
+4|I came (yesterday) · venir|vine||Preterite: a finished time (ayer, el sábado).||he venido;venía
+4|you came (tú, last night) · venir|viniste||Preterite: a finished time (ayer, el sábado).||has venido;venías
+4|she came (on Saturday) · venir|vino||Preterite: a finished time (ayer, el sábado).||ha venido;venía
+4|we came (last week) · venir|vinimos||Preterite: a finished time (ayer, el sábado).||hemos venido;veníamos
+4|you all came (vosotros, last summer) · venir|vinisteis||Vosotros: Spain's everyday 'you all'.||habéis venido;veníais
+4|I've come (today) · venir|he venido||Madrid uses the perfect for anything today or this week.||vine;venía
+4|I used to come · venir|venía||Imperfect: habits and background in the past.||vine;he venido
+4|I put (yesterday) · poner|puse||Preterite: a finished time (ayer, el sábado).||he puesto;ponía
+4|you put (tú, last night) · poner|pusiste||Preterite: a finished time (ayer, el sábado).||has puesto;ponías
+4|he put (on Saturday) · poner|puso||Preterite: a finished time (ayer, el sábado).||ha puesto;ponía
+4|we put (last week) · poner|pusimos||Preterite: a finished time (ayer, el sábado).||hemos puesto;poníamos
+4|you all put (vosotros, last summer) · poner|pusisteis||Vosotros: Spain's everyday 'you all'.||habéis puesto;poníais
+4|I've put (today) · poner|he puesto||Madrid uses the perfect for anything today or this week.||puse;ponía
+4|I used to put · poner|ponía||Imperfect: habits and background in the past.||puse;he puesto
+4|I gave (yesterday) · dar|di||Preterite: a finished time (ayer, el sábado).||he dado;daba
+4|you gave (tú, last night) · dar|diste||Preterite: a finished time (ayer, el sábado).||has dado;dabas
+4|she gave (on Saturday) · dar|dio||Preterite: a finished time (ayer, el sábado).||ha dado;daba
+4|we gave (last week) · dar|dimos||Preterite: a finished time (ayer, el sábado).||hemos dado;dábamos
+4|you all gave (vosotros, last summer) · dar|disteis||Vosotros: Spain's everyday 'you all'.||habéis dado;dabais
+4|I've given (today) · dar|he dado||Madrid uses the perfect for anything today or this week.||di;daba
+4|I used to give · dar|daba||Imperfect: habits and background in the past.||di;he dado
+4|I saw (yesterday) · ver|vi||Preterite: a finished time (ayer, el sábado).||he visto;veía
+4|you saw (tú, last night) · ver|viste||Preterite: a finished time (ayer, el sábado).||has visto;veías
+4|he saw (on Saturday) · ver|vio||Preterite: a finished time (ayer, el sábado).||ha visto;veía
+4|we saw (last week) · ver|vimos||Preterite: a finished time (ayer, el sábado).||hemos visto;veíamos
+4|you all saw (vosotros, last summer) · ver|visteis||Vosotros: Spain's everyday 'you all'.||habéis visto;veíais
+4|I've seen (today) · ver|he visto||Madrid uses the perfect for anything today or this week.||vi;veía
+4|I used to see · ver|veía||Imperfect: habits and background in the past.||vi;he visto
+4|I went out (yesterday) · salir|salí||Preterite: a finished time (ayer, el sábado).||he salido;salía
+4|you went out (tú, last night) · salir|saliste||Preterite: a finished time (ayer, el sábado).||has salido;salías
+4|she went out (on Saturday) · salir|salió||Preterite: a finished time (ayer, el sábado).||ha salido;salía
+4|we went out (last week) · salir|salimos||Preterite: a finished time (ayer, el sábado).||hemos salido;salíamos
+4|you all went out (vosotros, last summer) · salir|salisteis||Vosotros: Spain's everyday 'you all'.||habéis salido;salíais
+4|I've gone out (today) · salir|he salido||Madrid uses the perfect for anything today or this week.||salí;salía
+4|I used to go out · salir|salía||Imperfect: habits and background in the past.||salí;he salido
+4|I arrived (yesterday) · llegar|llegué||Preterite: a finished time (ayer, el sábado).||he llegado;llegaba
+4|you arrived (tú, last night) · llegar|llegaste||Preterite: a finished time (ayer, el sábado).||has llegado;llegabas
+4|he arrived (on Saturday) · llegar|llegó||Preterite: a finished time (ayer, el sábado).||ha llegado;llegaba
+4|we arrived (last week) · llegar|llegamos||Preterite: a finished time (ayer, el sábado).||hemos llegado;llegábamos
+4|you all arrived (vosotros, last summer) · llegar|llegasteis||Vosotros: Spain's everyday 'you all'.||habéis llegado;llegabais
+4|I've arrived (today) · llegar|he llegado||Madrid uses the perfect for anything today or this week.||llegué;llegaba
+4|I used to arrive · llegar|llegaba||Imperfect: habits and background in the past.||llegué;he llegado
+4|I met up (yesterday) · quedar|quedé||Preterite: a finished time (ayer, el sábado).||he quedado;quedaba
+4|you met up (tú, last night) · quedar|quedaste||Preterite: a finished time (ayer, el sábado).||has quedado;quedabas
+4|she met up (on Saturday) · quedar|quedó||Preterite: a finished time (ayer, el sábado).||ha quedado;quedaba
+4|we met up (last week) · quedar|quedamos||Preterite: a finished time (ayer, el sábado).||hemos quedado;quedábamos
+4|you all met up (vosotros, last summer) · quedar|quedasteis||Vosotros: Spain's everyday 'you all'.||habéis quedado;quedabais
+4|I've met up (today) · quedar|he quedado||Madrid uses the perfect for anything today or this week.||quedé;quedaba
+4|I used to meet up · quedar|quedaba||Imperfect: habits and background in the past.||quedé;he quedado
+4|I took (somewhere, yesterday) · llevar|llevé||Preterite: a finished time (ayer, el sábado).||he llevado;llevaba
+4|you took (somewhere, tú, last night) · llevar|llevaste||Preterite: a finished time (ayer, el sábado).||has llevado;llevabas
+4|he took (somewhere, on Saturday) · llevar|llevó||Preterite: a finished time (ayer, el sábado).||ha llevado;llevaba
+4|we took (somewhere, last week) · llevar|llevamos||Preterite: a finished time (ayer, el sábado).||hemos llevado;llevábamos
+4|you all took (somewhere, vosotros, last summer) · llevar|llevasteis||Vosotros: Spain's everyday 'you all'.||habéis llevado;llevabais
+4|I've taken (somewhere, today) · llevar|he llevado||Madrid uses the perfect for anything today or this week.||llevé;llevaba
+4|I used to take (somewhere) · llevar|llevaba||Imperfect: habits and background in the past.||llevé;he llevado
+4|I left (something, yesterday) · dejar|dejé||Preterite: a finished time (ayer, el sábado).||he dejado;dejaba
+4|you left (something, tú, last night) · dejar|dejaste||Preterite: a finished time (ayer, el sábado).||has dejado;dejabas
+4|she left (something, on Saturday) · dejar|dejó||Preterite: a finished time (ayer, el sábado).||ha dejado;dejaba
+4|we left (something, last week) · dejar|dejamos||Preterite: a finished time (ayer, el sábado).||hemos dejado;dejábamos
+4|you all left (something, vosotros, last summer) · dejar|dejasteis||Vosotros: Spain's everyday 'you all'.||habéis dejado;dejabais
+4|I've left (something, today) · dejar|he dejado||Madrid uses the perfect for anything today or this week.||dejé;dejaba
+4|I used to leave (something) · dejar|dejaba||Imperfect: habits and background in the past.||dejé;he dejado
+4|I found (yesterday) · encontrar|encontré||Preterite: a finished time (ayer, el sábado).||he encontrado;encontraba
+4|you found (tú, last night) · encontrar|encontraste||Preterite: a finished time (ayer, el sábado).||has encontrado;encontrabas
+4|he found (on Saturday) · encontrar|encontró||Preterite: a finished time (ayer, el sábado).||ha encontrado;encontraba
+4|we found (last week) · encontrar|encontramos||Preterite: a finished time (ayer, el sábado).||hemos encontrado;encontrábamos
+4|you all found (vosotros, last summer) · encontrar|encontrasteis||Vosotros: Spain's everyday 'you all'.||habéis encontrado;encontrabais
+4|I've found (today) · encontrar|he encontrado||Madrid uses the perfect for anything today or this week.||encontré;encontraba
+4|I used to find · encontrar|encontraba||Imperfect: habits and background in the past.||encontré;he encontrado
+4|I thought (yesterday) · pensar|pensé||Preterite: a finished time (ayer, el sábado).||he pensado;pensaba
+4|you thought (tú, last night) · pensar|pensaste||Preterite: a finished time (ayer, el sábado).||has pensado;pensabas
+4|she thought (on Saturday) · pensar|pensó||Preterite: a finished time (ayer, el sábado).||ha pensado;pensaba
+4|we thought (last week) · pensar|pensamos||Preterite: a finished time (ayer, el sábado).||hemos pensado;pensábamos
+4|you all thought (vosotros, last summer) · pensar|pensasteis||Vosotros: Spain's everyday 'you all'.||habéis pensado;pensabais
+4|I've thought (today) · pensar|he pensado||Madrid uses the perfect for anything today or this week.||pensé;pensaba
+4|I used to think · pensar|pensaba||Imperfect: habits and background in the past.||pensé;he pensado
+4|I came back (yesterday) · volver|volví||Preterite: a finished time (ayer, el sábado).||he vuelto;volvía
+4|you came back (tú, last night) · volver|volviste||Preterite: a finished time (ayer, el sábado).||has vuelto;volvías
+4|he came back (on Saturday) · volver|volvió||Preterite: a finished time (ayer, el sábado).||ha vuelto;volvía
+4|we came back (last week) · volver|volvimos||Preterite: a finished time (ayer, el sábado).||hemos vuelto;volvíamos
+4|you all came back (vosotros, last summer) · volver|volvisteis||Vosotros: Spain's everyday 'you all'.||habéis vuelto;volvíais
+4|I've come back (today) · volver|he vuelto||Madrid uses the perfect for anything today or this week.||volví;volvía
+4|I used to come back · volver|volvía||Imperfect: habits and background in the past.||volví;he vuelto
+4|I started (yesterday) · empezar|empecé||Preterite: a finished time (ayer, el sábado).||he empezado;empezaba
+4|you started (tú, last night) · empezar|empezaste||Preterite: a finished time (ayer, el sábado).||has empezado;empezabas
+4|she started (on Saturday) · empezar|empezó||Preterite: a finished time (ayer, el sábado).||ha empezado;empezaba
+4|we started (last week) · empezar|empezamos||Preterite: a finished time (ayer, el sábado).||hemos empezado;empezábamos
+4|you all started (vosotros, last summer) · empezar|empezasteis||Vosotros: Spain's everyday 'you all'.||habéis empezado;empezabais
+4|I've started (today) · empezar|he empezado||Madrid uses the perfect for anything today or this week.||empecé;empezaba
+4|I used to start · empezar|empezaba||Imperfect: habits and background in the past.||empecé;he empezado
+4|I met (for the first time, yesterday) · conocer|conocí||Preterite: a finished time (ayer, el sábado).||he conocido;conocía
+4|you met (for the first time, tú, last night) · conocer|conociste||Preterite: a finished time (ayer, el sábado).||has conocido;conocías
+4|he met (for the first time, on Saturday) · conocer|conoció||Preterite: a finished time (ayer, el sábado).||ha conocido;conocía
+4|we met (for the first time, last week) · conocer|conocimos||Preterite: a finished time (ayer, el sábado).||hemos conocido;conocíamos
+4|you all met (for the first time, vosotros, last summer) · conocer|conocisteis||Vosotros: Spain's everyday 'you all'.||habéis conocido;conocíais
+4|I've met (today) · conocer|he conocido||Madrid uses the perfect for anything today or this week.||conocí;conocía
+4|I knew (someone, back then) · conocer|conocía||Imperfect: habits and background in the past.||conocí;he conocido
+4|I believed (yesterday) · creer|creí||Preterite: a finished time (ayer, el sábado).||he creído;creía
+4|you believed (tú, last night) · creer|creíste||Preterite: a finished time (ayer, el sábado).||has creído;creías
+4|she believed (on Saturday) · creer|creyó||Preterite: a finished time (ayer, el sábado).||ha creído;creía
+4|we believed (last week) · creer|creímos||Preterite: a finished time (ayer, el sábado).||hemos creído;creíamos
+4|you all believed (vosotros, last summer) · creer|creísteis||Vosotros: Spain's everyday 'you all'.||habéis creído;creíais
+4|I've believed (today) · creer|he creído||Madrid uses the perfect for anything today or this week.||creí;creía
+4|I used to believe · creer|creía||Imperfect: habits and background in the past.||creí;he creído
+4|I talked (yesterday) · hablar|hablé||Preterite: a finished time (ayer, el sábado).||he hablado;hablaba
+4|you talked (tú, last night) · hablar|hablaste||Preterite: a finished time (ayer, el sábado).||has hablado;hablabas
+4|he talked (on Saturday) · hablar|habló||Preterite: a finished time (ayer, el sábado).||ha hablado;hablaba
+4|we talked (last week) · hablar|hablamos||Preterite: a finished time (ayer, el sábado).||hemos hablado;hablábamos
+4|you all talked (vosotros, last summer) · hablar|hablasteis||Vosotros: Spain's everyday 'you all'.||habéis hablado;hablabais
+4|I've talked (today) · hablar|he hablado||Madrid uses the perfect for anything today or this week.||hablé;hablaba
+4|I used to talk · hablar|hablaba||Imperfect: habits and background in the past.||hablé;he hablado
+4|I ate / had lunch (yesterday) · comer|comí||Preterite: a finished time (ayer, el sábado).||he comido;comía
+4|you ate / had lunch (tú, last night) · comer|comiste||Preterite: a finished time (ayer, el sábado).||has comido;comías
+4|she ate / had lunch (on Saturday) · comer|comió||Preterite: a finished time (ayer, el sábado).||ha comido;comía
+4|we ate / had lunch (last week) · comer|comimos||Preterite: a finished time (ayer, el sábado).||hemos comido;comíamos
+4|you all ate / had lunch (vosotros, last summer) · comer|comisteis||Vosotros: Spain's everyday 'you all'.||habéis comido;comíais
+4|I've eaten / had lunch (today) · comer|he comido||Madrid uses the perfect for anything today or this week.||comí;comía
+4|I used to eat / have lunch · comer|comía||Imperfect: habits and background in the past.||comí;he comido
+4|I drank (yesterday) · beber|bebí||Preterite: a finished time (ayer, el sábado).||he bebido;bebía
+4|you drank (tú, last night) · beber|bebiste||Preterite: a finished time (ayer, el sábado).||has bebido;bebías
+4|he drank (on Saturday) · beber|bebió||Preterite: a finished time (ayer, el sábado).||ha bebido;bebía
+4|we drank (last week) · beber|bebimos||Preterite: a finished time (ayer, el sábado).||hemos bebido;bebíamos
+4|you all drank (vosotros, last summer) · beber|bebisteis||Vosotros: Spain's everyday 'you all'.||habéis bebido;bebíais
+4|I've drunk (today) · beber|he bebido||Madrid uses the perfect for anything today or this week.||bebí;bebía
+4|I used to drink · beber|bebía||Imperfect: habits and background in the past.||bebí;he bebido
+4|I had (a drink, yesterday) · tomar|tomé||Preterite: a finished time (ayer, el sábado).||he tomado;tomaba
+4|you had (a drink, tú, last night) · tomar|tomaste||Preterite: a finished time (ayer, el sábado).||has tomado;tomabas
+4|she had (a drink, on Saturday) · tomar|tomó||Preterite: a finished time (ayer, el sábado).||ha tomado;tomaba
+4|we had (a drink, last week) · tomar|tomamos||Preterite: a finished time (ayer, el sábado).||hemos tomado;tomábamos
+4|you all had (a drink, vosotros, last summer) · tomar|tomasteis||Vosotros: Spain's everyday 'you all'.||habéis tomado;tomabais
+4|I've had (a drink, today) · tomar|he tomado||Madrid uses the perfect for anything today or this week.||tomé;tomaba
+4|I used to have (a drink) · tomar|tomaba||Imperfect: habits and background in the past.||tomé;he tomado
+4|I lived (yesterday) · vivir|viví||Preterite: a finished time (ayer, el sábado).||he vivido;vivía
+4|you lived (tú, last night) · vivir|viviste||Preterite: a finished time (ayer, el sábado).||has vivido;vivías
+4|he lived (on Saturday) · vivir|vivió||Preterite: a finished time (ayer, el sábado).||ha vivido;vivía
+4|we lived (last week) · vivir|vivimos||Preterite: a finished time (ayer, el sábado).||hemos vivido;vivíamos
+4|you all lived (vosotros, last summer) · vivir|vivisteis||Vosotros: Spain's everyday 'you all'.||habéis vivido;vivíais
+4|I've lived (today) · vivir|he vivido||Madrid uses the perfect for anything today or this week.||viví;vivía
+4|I used to live · vivir|vivía||Imperfect: habits and background in the past.||viví;he vivido
+4|I worked (yesterday) · trabajar|trabajé||Preterite: a finished time (ayer, el sábado).||he trabajado;trabajaba
+4|you worked (tú, last night) · trabajar|trabajaste||Preterite: a finished time (ayer, el sábado).||has trabajado;trabajabas
+4|she worked (on Saturday) · trabajar|trabajó||Preterite: a finished time (ayer, el sábado).||ha trabajado;trabajaba
+4|we worked (last week) · trabajar|trabajamos||Preterite: a finished time (ayer, el sábado).||hemos trabajado;trabajábamos
+4|you all worked (vosotros, last summer) · trabajar|trabajasteis||Vosotros: Spain's everyday 'you all'.||habéis trabajado;trabajabais
+4|I've worked (today) · trabajar|he trabajado||Madrid uses the perfect for anything today or this week.||trabajé;trabajaba
+4|I used to work · trabajar|trabajaba||Imperfect: habits and background in the past.||trabajé;he trabajado
+4|I wrote (yesterday) · escribir|escribí||Preterite: a finished time (ayer, el sábado).||he escrito;escribía
+4|you wrote (tú, last night) · escribir|escribiste||Preterite: a finished time (ayer, el sábado).||has escrito;escribías
+4|he wrote (on Saturday) · escribir|escribió||Preterite: a finished time (ayer, el sábado).||ha escrito;escribía
+4|we wrote (last week) · escribir|escribimos||Preterite: a finished time (ayer, el sábado).||hemos escrito;escribíamos
+4|you all wrote (vosotros, last summer) · escribir|escribisteis||Vosotros: Spain's everyday 'you all'.||habéis escrito;escribíais
+4|I've written (today) · escribir|he escrito||Madrid uses the perfect for anything today or this week.||escribí;escribía
+4|I used to write · escribir|escribía||Imperfect: habits and background in the past.||escribí;he escrito
+4|I read (yesterday) · leer|leí||Preterite: a finished time (ayer, el sábado).||he leído;leía
+4|you read (tú, last night) · leer|leíste||Preterite: a finished time (ayer, el sábado).||has leído;leías
+4|she read (on Saturday) · leer|leyó||Preterite: a finished time (ayer, el sábado).||ha leído;leía
+4|we read (last week) · leer|leímos||Preterite: a finished time (ayer, el sábado).||hemos leído;leíamos
+4|you all read (vosotros, last summer) · leer|leísteis||Vosotros: Spain's everyday 'you all'.||habéis leído;leíais
+4|I've read (today) · leer|he leído||Madrid uses the perfect for anything today or this week.||leí;leía
+4|I used to read · leer|leía||Imperfect: habits and background in the past.||leí;he leído
+4|I slept (yesterday) · dormir|dormí||Preterite: a finished time (ayer, el sábado).||he dormido;dormía
+4|you slept (tú, last night) · dormir|dormiste||Preterite: a finished time (ayer, el sábado).||has dormido;dormías
+4|he slept (on Saturday) · dormir|durmió||Preterite: a finished time (ayer, el sábado).||ha dormido;dormía
+4|we slept (last week) · dormir|dormimos||Preterite: a finished time (ayer, el sábado).||hemos dormido;dormíamos
+4|you all slept (vosotros, last summer) · dormir|dormisteis||Vosotros: Spain's everyday 'you all'.||habéis dormido;dormíais
+4|I've slept (today) · dormir|he dormido||Madrid uses the perfect for anything today or this week.||dormí;dormía
+4|I used to sleep · dormir|dormía||Imperfect: habits and background in the past.||dormí;he dormido
+4|I ordered / asked for (yesterday) · pedir|pedí||Preterite: a finished time (ayer, el sábado).||he pedido;pedía
+4|you ordered / asked for (tú, last night) · pedir|pediste||Preterite: a finished time (ayer, el sábado).||has pedido;pedías
+4|she ordered / asked for (on Saturday) · pedir|pidió||Preterite: a finished time (ayer, el sábado).||ha pedido;pedía
+4|we ordered / asked for (last week) · pedir|pedimos||Preterite: a finished time (ayer, el sábado).||hemos pedido;pedíamos
+4|you all ordered / asked for (vosotros, last summer) · pedir|pedisteis||Vosotros: Spain's everyday 'you all'.||habéis pedido;pedíais
+4|I've ordered / asked for (today) · pedir|he pedido||Madrid uses the perfect for anything today or this week.||pedí;pedía
+4|I used to order / ask for · pedir|pedía||Imperfect: habits and background in the past.||pedí;he pedido
+4|I heard (yesterday) · oír|oí||Preterite: a finished time (ayer, el sábado).||he oído;oía
+4|you heard (tú, last night) · oír|oíste||Preterite: a finished time (ayer, el sábado).||has oído;oías
+4|he heard (on Saturday) · oír|oyó||Preterite: a finished time (ayer, el sábado).||ha oído;oía
+4|we heard (last week) · oír|oímos||Preterite: a finished time (ayer, el sábado).||hemos oído;oíamos
+4|you all heard (vosotros, last summer) · oír|oísteis||Vosotros: Spain's everyday 'you all'.||habéis oído;oíais
+4|I've heard (today) · oír|he oído||Madrid uses the perfect for anything today or this week.||oí;oía
+4|I used to hear · oír|oía||Imperfect: habits and background in the past.||oí;he oído
+4|I brought (yesterday) · traer|traje||Preterite: a finished time (ayer, el sábado).||he traído;traía
+4|you brought (tú, last night) · traer|trajiste||Preterite: a finished time (ayer, el sábado).||has traído;traías
+4|she brought (on Saturday) · traer|trajo||Preterite: a finished time (ayer, el sábado).||ha traído;traía
+4|we brought (last week) · traer|trajimos||Preterite: a finished time (ayer, el sábado).||hemos traído;traíamos
+4|you all brought (vosotros, last summer) · traer|trajisteis||Vosotros: Spain's everyday 'you all'.||habéis traído;traíais
+4|I've brought (today) · traer|he traído||Madrid uses the perfect for anything today or this week.||traje;traía
+4|I used to bring · traer|traía||Imperfect: habits and background in the past.||traje;he traído
+4|I drove (yesterday) · conducir|conduje||Preterite: a finished time (ayer, el sábado).||he conducido;conducía
+4|you drove (tú, last night) · conducir|condujiste||Preterite: a finished time (ayer, el sábado).||has conducido;conducías
+4|he drove (on Saturday) · conducir|condujo||Preterite: a finished time (ayer, el sábado).||ha conducido;conducía
+4|we drove (last week) · conducir|condujimos||Preterite: a finished time (ayer, el sábado).||hemos conducido;conducíamos
+4|you all drove (vosotros, last summer) · conducir|condujisteis||Vosotros: Spain's everyday 'you all'.||habéis conducido;conducíais
+4|I've driven (today) · conducir|he conducido||Madrid uses the perfect for anything today or this week.||conduje;conducía
+4|I used to drive · conducir|conducía||Imperfect: habits and background in the past.||conduje;he conducido
+4|I caught (the bus, yesterday) · coger|cogí||Preterite: a finished time (ayer, el sábado).||he cogido;cogía
+4|you caught (the bus, tú, last night) · coger|cogiste||Preterite: a finished time (ayer, el sábado).||has cogido;cogías
+4|she caught (the bus, on Saturday) · coger|cogió||Preterite: a finished time (ayer, el sábado).||ha cogido;cogía
+4|we caught (the bus, last week) · coger|cogimos||Preterite: a finished time (ayer, el sábado).||hemos cogido;cogíamos
+4|you all caught (the bus, vosotros, last summer) · coger|cogisteis||Vosotros: Spain's everyday 'you all'.||habéis cogido;cogíais
+4|I've caught (the bus, today) · coger|he cogido||Madrid uses the perfect for anything today or this week.||cogí;cogía
+4|I used to catch (the bus) · coger|cogía||Imperfect: habits and background in the past.||cogí;he cogido
+4|I paid (yesterday) · pagar|pagué||Preterite: a finished time (ayer, el sábado).||he pagado;pagaba
+4|you paid (tú, last night) · pagar|pagaste||Preterite: a finished time (ayer, el sábado).||has pagado;pagabas
+4|he paid (on Saturday) · pagar|pagó||Preterite: a finished time (ayer, el sábado).||ha pagado;pagaba
+4|we paid (last week) · pagar|pagamos||Preterite: a finished time (ayer, el sábado).||hemos pagado;pagábamos
+4|you all paid (vosotros, last summer) · pagar|pagasteis||Vosotros: Spain's everyday 'you all'.||habéis pagado;pagabais
+4|I've paid (today) · pagar|he pagado||Madrid uses the perfect for anything today or this week.||pagué;pagaba
+4|I used to pay · pagar|pagaba||Imperfect: habits and background in the past.||pagué;he pagado
+4|I looked for (yesterday) · buscar|busqué||Preterite: a finished time (ayer, el sábado).||he buscado;buscaba
+4|you looked for (tú, last night) · buscar|buscaste||Preterite: a finished time (ayer, el sábado).||has buscado;buscabas
+4|she looked for (on Saturday) · buscar|buscó||Preterite: a finished time (ayer, el sábado).||ha buscado;buscaba
+4|we looked for (last week) · buscar|buscamos||Preterite: a finished time (ayer, el sábado).||hemos buscado;buscábamos
+4|you all looked for (vosotros, last summer) · buscar|buscasteis||Vosotros: Spain's everyday 'you all'.||habéis buscado;buscabais
+4|I've looked for (today) · buscar|he buscado||Madrid uses the perfect for anything today or this week.||busqué;buscaba
+4|I used to look for · buscar|buscaba||Imperfect: habits and background in the past.||busqué;he buscado
+4|I understood (yesterday) · entender|entendí||Preterite: a finished time (ayer, el sábado).||he entendido;entendía
+4|you understood (tú, last night) · entender|entendiste||Preterite: a finished time (ayer, el sábado).||has entendido;entendías
+4|he understood (on Saturday) · entender|entendió||Preterite: a finished time (ayer, el sábado).||ha entendido;entendía
+4|we understood (last week) · entender|entendimos||Preterite: a finished time (ayer, el sábado).||hemos entendido;entendíamos
+4|you all understood (vosotros, last summer) · entender|entendisteis||Vosotros: Spain's everyday 'you all'.||habéis entendido;entendíais
+4|I've understood (today) · entender|he entendido||Madrid uses the perfect for anything today or this week.||entendí;entendía
+4|I used to understand · entender|entendía||Imperfect: habits and background in the past.||entendí;he entendido
+4|I felt (yesterday) · sentir|sentí||Preterite: a finished time (ayer, el sábado).||he sentido;sentía
+4|you felt (tú, last night) · sentir|sentiste||Preterite: a finished time (ayer, el sábado).||has sentido;sentías
+4|she felt (on Saturday) · sentir|sintió||Preterite: a finished time (ayer, el sábado).||ha sentido;sentía
+4|we felt (last week) · sentir|sentimos||Preterite: a finished time (ayer, el sábado).||hemos sentido;sentíamos
+4|you all felt (vosotros, last summer) · sentir|sentisteis||Vosotros: Spain's everyday 'you all'.||habéis sentido;sentíais
+4|I've felt (today) · sentir|he sentido||Madrid uses the perfect for anything today or this week.||sentí;sentía
+4|I used to feel · sentir|sentía||Imperfect: habits and background in the past.||sentí;he sentido
+4|I lost / missed (a train, yesterday) · perder|perdí||Preterite: a finished time (ayer, el sábado).||he perdido;perdía
+4|you lost / missed (a train, tú, last night) · perder|perdiste||Preterite: a finished time (ayer, el sábado).||has perdido;perdías
+4|he lost / missed (a train, on Saturday) · perder|perdió||Preterite: a finished time (ayer, el sábado).||ha perdido;perdía
+4|we lost / missed (a train, last week) · perder|perdimos||Preterite: a finished time (ayer, el sábado).||hemos perdido;perdíamos
+4|you all lost / missed (a train, vosotros, last summer) · perder|perdisteis||Vosotros: Spain's everyday 'you all'.||habéis perdido;perdíais
+4|I've lost / missed (a train, today) · perder|he perdido||Madrid uses the perfect for anything today or this week.||perdí;perdía
+4|I used to lose / miss (a train) · perder|perdía||Imperfect: habits and background in the past.||perdí;he perdido
+4|I played (yesterday) · jugar|jugué||Preterite: a finished time (ayer, el sábado).||he jugado;jugaba
+4|you played (tú, last night) · jugar|jugaste||Preterite: a finished time (ayer, el sábado).||has jugado;jugabas
+4|she played (on Saturday) · jugar|jugó||Preterite: a finished time (ayer, el sábado).||ha jugado;jugaba
+4|we played (last week) · jugar|jugamos||Preterite: a finished time (ayer, el sábado).||hemos jugado;jugábamos
+4|you all played (vosotros, last summer) · jugar|jugasteis||Vosotros: Spain's everyday 'you all'.||habéis jugado;jugabais
+4|I've played (today) · jugar|he jugado||Madrid uses the perfect for anything today or this week.||jugué;jugaba
+4|I used to play · jugar|jugaba||Imperfect: habits and background in the past.||jugué;he jugado
+4|I opened (yesterday) · abrir|abrí||Preterite: a finished time (ayer, el sábado).||he abierto;abría
+4|you opened (tú, last night) · abrir|abriste||Preterite: a finished time (ayer, el sábado).||has abierto;abrías
+4|he opened (on Saturday) · abrir|abrió||Preterite: a finished time (ayer, el sábado).||ha abierto;abría
+4|we opened (last week) · abrir|abrimos||Preterite: a finished time (ayer, el sábado).||hemos abierto;abríamos
+4|you all opened (vosotros, last summer) · abrir|abristeis||Vosotros: Spain's everyday 'you all'.||habéis abierto;abríais
+4|I've opened (today) · abrir|he abierto||Madrid uses the perfect for anything today or this week.||abrí;abría
+4|I used to open · abrir|abría||Imperfect: habits and background in the past.||abrí;he abierto
+4|I bought (yesterday) · comprar|compré||Preterite: a finished time (ayer, el sábado).||he comprado;compraba
+4|you bought (tú, last night) · comprar|compraste||Preterite: a finished time (ayer, el sábado).||has comprado;comprabas
+4|she bought (on Saturday) · comprar|compró||Preterite: a finished time (ayer, el sábado).||ha comprado;compraba
+4|we bought (last week) · comprar|compramos||Preterite: a finished time (ayer, el sábado).||hemos comprado;comprábamos
+4|you all bought (vosotros, last summer) · comprar|comprasteis||Vosotros: Spain's everyday 'you all'.||habéis comprado;comprabais
+4|I've bought (today) · comprar|he comprado||Madrid uses the perfect for anything today or this week.||compré;compraba
+4|I used to buy · comprar|compraba||Imperfect: habits and background in the past.||compré;he comprado
+4|I fell (yesterday) · caer|caí||Preterite: a finished time (ayer, el sábado).||he caído;caía
+4|you fell (tú, last night) · caer|caíste||Preterite: a finished time (ayer, el sábado).||has caído;caías
+4|he fell (on Saturday) · caer|cayó||Preterite: a finished time (ayer, el sábado).||ha caído;caía
+4|we fell (last week) · caer|caímos||Preterite: a finished time (ayer, el sábado).||hemos caído;caíamos
+4|you all fell (vosotros, last summer) · caer|caísteis||Vosotros: Spain's everyday 'you all'.||habéis caído;caíais
+4|I've fallen (today) · caer|he caído||Madrid uses the perfect for anything today or this week.||caí;caía
+4|I used to fall · caer|caía||Imperfect: habits and background in the past.||caí;he caído
+4|I was (somewhere, yesterday) · estar|estuve||Preterite: a finished time (ayer, el sábado).||he estado;estaba
+4|you were (somewhere, tú, last night) · estar|estuviste||Preterite: a finished time (ayer, el sábado).||has estado;estabas
+4|she was (somewhere, on Saturday) · estar|estuvo||Preterite: a finished time (ayer, el sábado).||ha estado;estaba
+4|we were (somewhere, last week) · estar|estuvimos||Preterite: a finished time (ayer, el sábado).||hemos estado;estábamos
+4|you all were (somewhere, vosotros, last summer) · estar|estuvisteis||Vosotros: Spain's everyday 'you all'.||habéis estado;estabais
+4|I've been (somewhere, today) · estar|he estado||Madrid uses the perfect for anything today or this week.||estuve;estaba
+4|I was (tired, back then) · estar|estaba||Imperfect: habits and background in the past.||estuve;he estado
+4|it was (a great party, last night) · ser|fue||Preterite: a finished event.||ha sido;era
+4|we were (the last ones there, on Saturday) · ser|fuimos||Ser and ir share their preterite.||hemos sido;éramos
+4|it has been (an amazing day, today) · ser|ha sido||Madrid uses the perfect for today.||fue;era
+4|it used to be (cheaper) · ser|era||Imperfect: description in the past.||fue;ha sido
+4|I was (a kid, back then) · ser|era||Imperfect for describing the past.||fui;he sido
+4|what happened? (yesterday) · pasar|qué pasó||Preterite: finished time.||qué ha pasado;qué pasaba
+4|what's happened? (just now, Madrid style) · pasar|qué ha pasado||In Madrid: ¿qué ha pasado? for anything today.||qué pasó;qué pasaba
+4|I spent (the day at home, yesterday) · pasar|pasé||Pasé el día en casa.||he pasado;pasaba
+4|there was (a problem, yesterday) · haber|hubo||Hubo = there was (a single event).||ha habido;había
+4|there was / there were (description, back then) · haber|había||Había mucha gente = there were lots of people.||hubo;ha habido
+4|there has been (an accident, today) · haber|ha habido||||hubo;había

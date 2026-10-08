@@ -18,7 +18,8 @@ New versions install over the old one and keep your progress, because every buil
 - **Madrid first.** If you give a Latin American word (carro, computadora, jugo…), the app tells you what Madrid says instead.
 - **Pronunciation.** 🔊 plays the word in your phone's Spain-Spanish voice; 🐢 plays it slowly. Choose between installed Spain voices in Ajustes.
 - **Spaced repetition.** Words you get right come back after 1, 3, 7, 14, 30 and then 60 days. Words you miss come back later in the same session and again next time.
-- **Levels.** Intermedio → Avanzado → Callejero. Each unlocks when 60% of the previous level is learned, or you can unlock it early.
+- **Decks.** Intermedio and Pasado are open from the start, and new words alternate between them. Avanzado unlocks at 60% of Intermedio, Callejero at 60% of Avanzado, or you can unlock either early.
+- **Pasado.** 48 high-use verbs in the preterite (fui), the perfect (he ido, which Madrid uses for anything today) and the imperfect (iba), including vosotros. Say the right verb in the wrong tense and the app tells you so. Starting with yo, tú and so on is fine.
 - **Crude words** are tagged CRUDE and can be switched off in Ajustes.
 
 ## Phone setup tips
@@ -32,7 +33,7 @@ New versions install over the old one and keep your progress, because every buil
 Edit `app/src/main/assets/words.txt`, one word per line:
 
 ```
-level|English prompt|answer;other accepted answer|tag|note|non-Madrid words
+level|English prompt|answer;other accepted answer|tag|note|non-Madrid words|other tenses
 1|the car|el coche||In Spain it's always coche.|el carro;el auto
 ```
 

@@ -10,7 +10,8 @@ data class Card(
     val answers: List<String>,
     val tag: String,
     val note: String,
-    val regional: List<String>
+    val regional: List<String>,
+    val otherTense: List<String> = emptyList()
 ) {
     val primary: String get() = answers.first()
     val isSlang: Boolean get() = tag == "s"
@@ -27,16 +28,25 @@ data class CardState(
 )
 
 object Levels {
-    val all = listOf(1, 2, 3)
+    /** Display order. Level 4 (Pasado) is open from the start, alongside Intermedio. */
+    val all = listOf(1, 4, 2, 3)
     fun name(level: Int) = when (level) {
         1 -> "Intermedio"
         2 -> "Avanzado"
-        else -> "Callejero"
+        3 -> "Callejero"
+        else -> "Pasado"
     }
     fun blurb(level: Int) = when (level) {
-        1 -> "Everyday Madrid: bars, flats, the metro and the slang you'll hear daily."
+        1 -> "Everyday Madrid: bars, flats, the metro, work and the slang you'll hear daily."
         2 -> "Idioms, nights out, Madrid food and the everyday swear words."
-        else -> "Street talk and old-school cheli. Strong language included."
+        3 -> "Street talk and old-school cheli. Strong language included."
+        else -> "High-use verbs in the past: preterite, perfect and imperfect, with vosotros."
+    }
+    /** The level that must be 60% learned before this one unlocks, or null if always open. */
+    fun prerequisite(level: Int): Int? = when (level) {
+        2 -> 1
+        3 -> 2
+        else -> null
     }
     const val UNLOCK_SHARE = 0.6
 }
@@ -66,9 +76,14 @@ class Deck(context: Context, private val settings: SharedPreferences) {
         if (en.isEmpty() || answers.isEmpty()) return null
         val tag = p.getOrNull(3)?.trim() ?: ""
         val note = p.getOrNull(4)?.trim() ?: ""
-        val regional = p.getOrNull(5)?.split(";")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
-        return Card("$level|$en", level, en, answers, tag, note, regional)
+        val regional = splitList(p.getOrNull(5))
+        val otherTense = splitList(p.getOrNull(6))
+        return Card("$level|$en", level, en, answers, tag, note, regional, otherTense)
     }
+
+    private fun splitList(field: String?): List<String> =
+        field?.split(";")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
+
 
     private fun load(id: String): CardState {
         val raw = progress.getString("c:$id", null) ?: return CardState()
@@ -94,9 +109,9 @@ class Deck(context: Context, private val settings: SharedPreferences) {
     private val includeVulgar: Boolean get() = settings.getBoolean("include_vulgar", true)
 
     fun isUnlocked(level: Int): Boolean {
-        if (level <= 1) return true
+        val pre = Levels.prerequisite(level) ?: return true
         if (settings.getInt("manual_unlock", 1) >= level) return true
-        return isUnlocked(level - 1) && learnedShare(level - 1) >= Levels.UNLOCK_SHARE
+        return isUnlocked(pre) && learnedShare(pre) >= Levels.UNLOCK_SHARE
     }
 
     fun unlock(level: Int) {
@@ -126,7 +141,7 @@ class Deck(context: Context, private val settings: SharedPreferences) {
     fun buildSession(size: Int, newLimit: Int, now: Long): Pair<List<Card>, Boolean> {
         val pool = pool()
         val due = pool.filter { isDue(it, now) }.sortedBy { state(it).due }
-        val fresh = pool.filter { !state(it).seen }
+        val fresh = interleave(pool.filter { !state(it).seen })
         val out = ArrayList<Card>()
         out.addAll(due.take(size))
         val room = size - out.size
@@ -135,6 +150,19 @@ class Deck(context: Context, private val settings: SharedPreferences) {
         // Nothing due and no new words: practise the cards coming up soonest.
         val ahead = pool.filter { state(it).seen }.sortedBy { state(it).due }.take(size)
         return Pair(ahead.shuffled(), true)
+    }
+
+    /** New words alternate between decks (e.g. one vocab card, one verb card) in list order. */
+    private fun interleave(cards: List<Card>): List<Card> {
+        val byLevel = Levels.all.map { lvl -> cards.filter { it.level == lvl }.toMutableList() }.filter { it.isNotEmpty() }
+        val out = ArrayList<Card>(cards.size)
+        var i = 0
+        while (out.size < cards.size) {
+            val list = byLevel[i % byLevel.size]
+            if (list.isNotEmpty()) out.add(list.removeAt(0))
+            i++
+        }
+        return out
     }
 
     fun recordCorrect(card: Card, now: Long = System.currentTimeMillis()) {
@@ -156,8 +184,8 @@ class Deck(context: Context, private val settings: SharedPreferences) {
         save(card)
     }
 
-    /** Answered with a real Spanish word that isn't what Madrid uses: a gentler step back. */
-    fun recordRegional(card: Card, now: Long = System.currentTimeMillis()) {
+    /** Real Spanish but not what was asked (other region or wrong tense): a gentler step back. */
+    fun recordNearMiss(card: Card, now: Long = System.currentTimeMillis()) {
         val s = state(card)
         s.seen = true
         s.reps++
