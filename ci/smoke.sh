@@ -28,7 +28,8 @@ scroll_top()  { for i in 1 2 3 4 5 6 7 8; do adb shell input swipe 540 500 540 1
 # Scroll down until "text" is on screen, then tap it.
 find_tap() {
   for i in $(seq 1 15); do
-    if has "$1"; then tap "$1" "${2:-2}"; return 0; fi
+    dump
+    if python3 ci/ui.py visible ui.xml "$1"; then tap "$1" "${2:-2}"; return 0; fi
     scroll_down
   done
   fail "couldn't find '$1' after scrolling"; return 1
@@ -63,6 +64,7 @@ shot 02-card
 has "How do you say" || fail "card screen didn't open"
 type_answer
 shot 03-correct
+adb shell dumpsys window windows | grep -E "Window #|mHasSurface=true|FLAG_DIM_BEHIND" > "$OUT/windows-after-typing.txt" || true
 has "Muy bien" || has "Close enough" || fail "correct answer not marked correct"
 
 log "Card 2: wrong answer"

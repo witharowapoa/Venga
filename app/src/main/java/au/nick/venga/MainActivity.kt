@@ -155,7 +155,7 @@ class MainActivity : Activity() {
     /** Rebuild the current screen in the new colours (a card already answered keeps its result until Next). */
     private fun redraw() {
         when (screen) {
-            Screen.HOME -> showHome()
+            Screen.HOME -> showHome(keepScroll = true)
             Screen.WORDS -> showWords()
             Screen.SUMMARY -> showSummary()
             Screen.PRACTICE -> if (!answered) showCard()
@@ -251,7 +251,10 @@ class MainActivity : Activity() {
         setPadding(dp(18), dp(16), dp(18), dp(16))
     }
 
-    private fun page(): LinearLayout {
+    private var currentScroll: ScrollView? = null
+
+    private fun page(keepScroll: Boolean = false): LinearLayout {
+        val keepY = if (keepScroll) currentScroll?.scrollY ?: 0 else 0
         val root = column().apply { setPadding(dp(20), dp(20), dp(20), dp(32)) }
         val scroll = ScrollView(this).apply {
             isFillViewport = true
@@ -259,6 +262,8 @@ class MainActivity : Activity() {
             addView(root, ViewGroup.LayoutParams(match, wrap))
         }
         setContentView(scroll)
+        currentScroll = scroll
+        if (keepY > 0) scroll.post { scroll.scrollTo(0, keepY) }
         return root
     }
 
@@ -275,11 +280,12 @@ class MainActivity : Activity() {
     // Home
     // =====================================================================
 
-    private fun showHome() {
+    /** keepScroll: redraw in place (after changing a setting) instead of jumping to the top. */
+    private fun showHome(keepScroll: Boolean = false) {
         stopListening()
         hideKeyboard()
         screen = Screen.HOME
-        val root = page()
+        val root = page(keepScroll)
 
         root.addView(label("¡Venga!", 40f, red, true))
         root.addView(flagStripe(), lp(dp(72), wrap, top = 4))
@@ -392,7 +398,7 @@ class MainActivity : Activity() {
             val next = options[(idx + 1).mod(options.size)]
             settings.edit().putInt(key, next).apply()
             if (key == "appearance") applyPalette()
-            if (key == "session_size" || key == "new_per_session" || key == "appearance") showHome() else pill.text = fmt(next)
+            if (key == "session_size" || key == "new_per_session" || key == "appearance") showHome(keepScroll = true) else pill.text = fmt(next)
             if (key == "speech_rate") speak("Hola, ¿qué tal?", slow = false)
         }
         r.addView(pill)
@@ -409,7 +415,7 @@ class MainActivity : Activity() {
         trackTintList = ColorStateList(states, intArrayOf(redSoft, line))
         setOnCheckedChangeListener { _, checked ->
             settings.edit().putBoolean(key, checked).apply()
-            if (key == "include_vulgar") showHome()
+            if (key == "include_vulgar") showHome(keepScroll = true)
         }
     }
 

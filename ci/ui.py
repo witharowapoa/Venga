@@ -38,13 +38,20 @@ def main():
         print("notfound")
         return 1
     ns = nodes(path)
+    top, bottom = 150, centre(ns[0])[1] * 2 - 150  # stay clear of the status and navigation bars
     for i, n in enumerate(ns):
         if needle in label(n):
             if mode == "tap":
-                print(*centre(n))
+                x, y = centre(n)
+                if not (top < y < bottom):
+                    continue  # off screen: caller should scroll
+                print(x, y)
                 return 0
             if mode == "has":
                 return 0
+            if mode == "visible":
+                if top < centre(n)[1] < bottom:
+                    return 0
             if mode == "after":
                 for m in ns[i + 1:]:
                     if (m.get("text") or "").strip():
