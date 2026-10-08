@@ -1,0 +1,215 @@
+# Venga word list
+# Format: level|English prompt|accepted Spanish answers (; separated, first is shown and spoken)|tag|note|other-region words (; separated)
+# Levels: 1 Intermedio, 2 Avanzado, 3 Callejero
+# Tags: s = slang/colloquial, v = vulgar/crude, blank = standard
+# Lines starting with # are ignored. To add words, add a line in the same format.
+
+# ---------- 1 · INTERMEDIO ----------
+1|the car|el coche||In Spain it's always coche.|el carro;el auto
+1|the computer|el ordenador||Ordenador in Spain; computadora is Latin American.|la computadora;el computador
+1|the mobile phone|el móvil||Short for teléfono móvil.|el celular
+1|the juice|el zumo||Zumo de naranja. Jugo is Latin American.|el jugo
+1|the potato|la patata||Papa is Latin American (and Canarian).|la papa
+1|the glasses (spectacles)|las gafas|||los lentes;los anteojos
+1|to drive|conducir|||manejar
+1|to take / to catch (a bus, a train)|coger;tomar||Coger is normal in Spain, but rude in much of Latin America.|
+1|the bus|el autobús;el bus||In Madrid you'll also hear "el EMT".|el camión;la guagua;el colectivo
+1|the ticket (metro, train)|el billete|||el boleto
+1|the monthly travel pass|el abono;el abono transporte||Madrid's monthly public transport pass.|
+1|the platform (metro, train)|el andén|||
+1|the bus stop|la parada;la parada de autobús|||
+1|the traffic jam|el atasco||Madrid's M-30 is famous for them.|el trancón;el taco
+1|the fridge|la nevera;el frigorífico;el frigo||Frigo is very common in casual speech.|el refrigerador;la heladera
+1|the tap (faucet)|el grifo||Agua del grifo = tap water. Madrid's is excellent.|la llave;la canilla
+1|the power socket / plug|el enchufe||Tener enchufe also means having connections.|
+1|the bill (utilities)|la factura|||
+1|the rent|el alquiler|||la renta
+1|the bond / deposit (on a flat)|la fianza|||el depósito
+1|the landlord|el casero;la casera|||
+1|to rent|alquilar|||rentar;arrendar
+1|the flat / apartment|el piso||Piso is the normal word in Madrid.|el departamento;el apartamento
+1|the waiter|el camarero;la camarera|||el mesero;el mozo
+1|the bill (in a restaurant)|la cuenta||¿Nos cobras? is how Madrileños often ask for it.|
+1|a small draught beer|una caña||The standard order in any Madrid bar.|
+1|a free snack that comes with your drink|una tapa||In Madrid a tapa often arrives free with your caña.|
+1|a portion (a shared dish)|una ración|||
+1|spicy fried potatoes|patatas bravas;bravas||A Madrid bar classic.|
+1|a sandwich (on a baguette)|un bocadillo;un bocata||Bocata is the casual form.|
+1|a fried squid sandwich|un bocadillo de calamares;un bocata de calamares||Madrid's signature snack, sold around Plaza Mayor.|
+1|the outdoor seating at a bar|la terraza||Terraceo = hanging out on terraces.|
+1|an espresso with a dash of milk|un cortado|||
+1|a white coffee|un café con leche|||
+1|to feel like (doing something)|apetecer;me apetece||Very Spanish: ¿Te apetece una caña?|
+1|to meet up (with someone)|quedar;quedar con;quedamos||¿Quedamos a las ocho?|
+1|to get up early|madrugar|||
+1|to stay up late|trasnochar|||
+1|to miss (someone)|echar de menos||Te echo de menos.|extrañar
+1|to realise|darse cuenta;me doy cuenta||Me di cuenta = I realised.|
+1|to take (a long time)|tardar||¿Cuánto tardas? = How long will you be?|demorar
+1|to save (money)|ahorrar|||
+1|to manage to / to get|conseguir;lograr|||
+1|to make the most of|aprovechar|||
+1|to feel overwhelmed / stressed|agobiarse;estar agobiado;estar agobiada||¡Qué agobio! = How stressful!|
+1|to try / to taste / to try on|probar|||
+1|to lend|prestar||¿Me prestas un boli?|
+1|to complain|quejarse|||
+1|to get angry|enfadarse|||enojarse
+1|angry|enfadado;enfadada|||enojado;enojada
+1|nice / friendly (a person)|majo;maja||Very Madrid: es muy maja.|
+1|okay / alright|vale||The most Spanish word there is.|
+1|come on! / right then!|venga||Also used to say goodbye: venga, hasta luego.|
+1|the weekend|el finde;el fin de semana||Finde is the everyday form.|
+1|the movie|la peli;la película||Peli is the everyday form.|
+1|the tobacconist (also sells stamps and bus cards)|el estanco|||
+1|the town hall / city council|el ayuntamiento|||
+1|to register your address with the council|empadronarse||The padrón: essential admin when you live in Madrid.|
+1|the queue|la cola|||la fila
+1|to queue|hacer cola|||hacer fila
+1|the lift (elevator)|el ascensor|||el elevador
+1|the jumper (sweater)|el jersey|||el suéter;la chompa
+1|the jacket|la chaqueta;la cazadora|||la chamarra;la campera
+1|the trainers (sneakers)|las zapatillas;las deportivas|||los tenis
+1|the swimming pool|la piscina|||la alberca;la pileta
+1|the flea market|el rastro||Named after Madrid's Sunday market, El Rastro.|
+1|the hangover|la resaca|||la cruda;el guayabo
+1|cheers!|salud|||
+1|to have a good time|pasarlo bien;pasárselo bien||Lo pasamos genial.|
+1|to go out for tapas|ir de tapas;tapear|||
+1|to go out for beers|ir de cañas|||
+1|the neighbourhood|el barrio||Malasaña, Lavapiés, Chamberí… Madrid lives by its barrios.|
+1|the footpath (sidewalk)|la acera|||la vereda;la banqueta
+1|the roundabout / big plaza junction|la glorieta;la rotonda||Madrid calls its big ones glorietas: Glorieta de Bilbao.|
+1|to park (a car)|aparcar|||estacionar;parquear
+1|the car park|el aparcamiento;el parking|||el estacionamiento
+1|the job (colloquial)|el curro|s|From currar.|
+1|to work (colloquial)|currar|s|Mañana curro = I'm working tomorrow.|chambear;laburar
+1|money (colloquial)|la pasta|s||la plata;la lana
+1|a euro (slang)|un pavo|s|Cinco pavos = five euros.|
+1|cool / great|guay|s||chévere;padre;bacán
+1|it's cool / I like it|mola;me mola;molar|s|From molar.|
+1|dude / mate|tío;tía|s|¿Qué pasa, tío?|güey;che;pana
+1|kid / young guy|chaval;chavala|s||
+1|loads / a whole lot|mogollón;un mogollón|s|Un mogollón de gente.|
+1|really / very (Madrid youth slang)|mazo|s|Mola mazo = it's really cool. Very Madrid.|
+1|to be amazed / to be blown away|flipar|s|¡Flipas! = You're kidding!|
+1|dodgy / sketchy|chungo;chunga|s||
+1|tacky / shabby|cutre|s||
+1|posh / preppy|pijo;pija|s|Salamanca district is the pijo heartland.|fresa;cheto
+1|a foreign tourist|un guiri;una guiri|s||gringo
+1|a gossip / busybody|cotilla|s||chismoso;chismosa
+1|to gossip / to snoop|cotillear|s||chismear
+1|no way! / how intense!|qué fuerte|s||
+1|what a drag! / how boring!|qué rollo;un rollo|s||
+1|like… (filler word)|en plan|s|Very Madrid: en plan, no sé.|
+1|please (casual)|porfa;porfi|s||
+1|a nuisance / a hassle|un marrón;una lata|s|Comerse el marrón = to get stuck with the problem.|
+
+# ---------- 2 · AVANZADO ----------
+2|to leave / to head off (slang)|pirarse;me piro|s|Me piro = I'm off.|
+2|to back out / to bail|rajarse|s|Ser un rajado = to be a flake.|
+2|to stand someone up|dar plantón|s|Me dio plantón.|
+2|to not be bothered with|pasar de;paso|s|Paso de ir = I can't be bothered going.|
+2|what a nerve! / what cheek!|qué morro;qué jeta|s|Tener morro = to have a nerve.|
+2|to nail it / to smash it|petarlo|s||
+2|to cause trouble / make a mess of things|liarla|s|¡La has liado!|
+2|wow, that's really something|tela;tela marinera|s|Tela marinera is the full version.|
+2|it's amazing (it's a…)|una pasada;es una pasada|s||
+2|first-class / top-notch|de lujo|s||
+2|to hook up / to make out|enrollarse;liarse|s||
+2|to flirt / to pull|ligar|s||
+2|to be drunk|ir pedo;estar pedo;estar borracho;ir borracho|s|Pedo is coarse but very common.|
+2|to get drunk|emborracharse;pillarse un pedo|s||
+2|a wild party|una juerga;un fiestón|s||
+2|drinking outdoors in the street with friends|el botellón;hacer botellón|s||
+2|a beer (slang)|una birra|s||
+2|a bar / a dive (slang)|un garito|s||
+2|a third-of-a-litre bottle of beer|un tercio||A Madrid bar staple.|
+2|a vermouth|un vermú;un vermut||Vermú de grifo: a Madrid Sunday ritual.|
+2|thick fried dough sticks (Madrid churros)|las porras;una porra||Madrid's chunkier churro, dunked in chocolate.|
+2|Madrid's chickpea stew|el cocido;el cocido madrileño|||
+2|a born-and-bred Madrileño (nickname)|un gato;una gata|s|Traditionally, someone from Madrid whose parents are too.|
+2|traditional / authentically Madrileño|castizo;castiza|||
+2|cocky / flashy (also: nice-looking)|chulo;chula|s|Qué chulo = how cool. Ser un chulo = to be cocky.|
+2|a thief (slang)|un chorizo|s||
+2|the cops (slang)|la pasma;los maderos;la poli|s|Madero is classic Madrid slang.|
+2|a loser / a sucker|un pringado;un pringao|s||
+2|to get stuck with the dirty work|pringar|s||
+2|to be fed up|estar harto;estar harta;estar hasta las narices|s||
+2|to be sick to death of (crude)|estar hasta los huevos;estar hasta los cojones|v|Crude. Hasta las narices is the polite version.|
+2|damn it! / for f***'s sake|joder|v|Used constantly in Madrid, but still a swear word.|
+2|bloody hell! / holy crap!|hostia;hostias;ostras|v|Ostras is the clean version.|
+2|no way! not a chance (crude)|ni de coña|v||
+2|bloody brilliant (crude)|cojonudo;cojonuda|v||
+2|amazing / mind-blowing (crude)|acojonante|v||
+2|to be scared stiff (crude)|acojonarse;estar acojonado|v||
+2|I couldn't give a damn (crude)|me la suda|v||
+2|to screw it up (crude)|cagarla|v|La he cagado = I've screwed up.|
+2|idiot / moron|gilipollas|v|The classic Spain insult.|pendejo;boludo
+2|dickhead / jerk|capullo|v||
+2|shit!|mierda|v||
+2|to get annoyed (colloquial)|mosquearse;estar mosqueado|s|Also means to get suspicious.|
+2|to get on well with|llevarse bien|||
+2|to be about to|estar a punto de|||
+2|to run out of|quedarse sin|||
+2|to get used to|acostumbrarse|||
+2|to get by / to manage|apañarse;apañárselas|s||
+2|to put up with|aguantar|||
+2|to show off|fardar;chulear|s|Fardar is very Spain.|
+2|to have a nap|echar una siesta;echarse la siesta|||
+2|to go for a wander|dar una vuelta|||
+2|to pull someone's leg|vacilar;tomar el pelo|s|¿Me estás vacilando?|
+2|the scene / the thing that's going on|la movida|s|La Movida Madrileña: the 80s cultural explosion.|
+2|a bargain (slang)|un chollo;una ganga|s|Chollo is very Spain.|
+2|stingy / tight-fisted|rata;tacaño;tacaña|s|Ser un rata.|
+2|cool as you like, unbothered|tan pancho;quedarse tan pancho|s|Se quedó tan pancho = he didn't bat an eyelid.|
+
+# ---------- 3 · CALLEJERO ----------
+3|bro / mate (old Madrid slang)|tronco;tronca|s|Cheli, Madrid's 70s–80s street slang.|
+3|the crew / bunch of people (old Madrid slang)|la basca|s|Cheli.|
+3|home / the house (old Madrid slang)|la keli;el keli|s|Cheli, from Caló.|
+3|the jacket (slang)|la chupa|s|Chupa de cuero = leather jacket.|
+3|the guy / the girl (slang)|el pibe;la piba|s||
+3|great / ace (old-school)|dabuti;chachi|s||
+3|people / the gang|la peña|s|¿Qué hace la peña?|
+3|f***ing brilliant (crude)|de puta madre|v|Sounds insulting, means "great".|
+3|total crap (crude)|una mierda;una puta mierda|v||
+3|a hell of a lot (crude)|un huevo|v|Cuesta un huevo = it costs a fortune.|
+3|to cost an arm and a leg|costar un ojo de la cara|s||
+3|a mess / a commotion|un follón;un cacao|s|Montar un follón = to kick up a fuss.|
+3|to be broke|estar pelado;estar sin blanca|s||
+3|bastard (crude)|cabrón;cabrona|v|Between friends it can be affectionate. Otherwise, very offensive.|
+3|f***ing (as an intensifier)|puto;puta|v|El puto metro = the f***ing metro.|
+3|go to hell! / piss off!|vete a la mierda|v||
+3|to get pissed off (crude)|cabrearse;estar cabreado|v||
+3|screwed / in a bad way (crude)|jodido;jodida|v||
+3|f***! (pure exclamation)|coño|v|In Madrid it's used like "damn!".|
+3|boobs (crude)|las tetas|v||
+3|the arse|el culo|v||
+3|to piss (crude)|mear|v||
+3|to take a crap|cagar|v||
+3|to shag (very crude)|follar|v|Very crude.|coger
+3|horny (crude)|cachondo;cachonda|v|Also means funny in some contexts.|
+3|to be hot / good-looking (of a person)|estar bueno;estar buena|s||
+3|an ugly person (slang)|un cardo|s||
+3|to break up (with a partner)|cortar;hemos cortado|s|Hemos cortado = we've broken up.|
+3|to get it / to understand (slang)|pillar;lo pillo|s|¿Lo pillas? = Get it?|
+3|to skive off / to dodge work|escaquearse|s|Very Spain.|
+3|to crack up laughing|partirse;me parto|s|Me parto = I'm dying laughing.|
+3|hilarious (crude)|descojonante|v||
+3|to laugh your head off (crude)|descojonarse;me descojono|v||
+3|to snitch / to tell on someone|chivarse|s||
+3|a snitch|un chivato;una chivata|s||
+3|to nick / to steal (slang)|mangar;chorizar|s||
+3|a joint (cannabis)|un porro;un peta|s||
+3|stoned|fumado;estar fumado;ir fumado|s||
+3|a lie / a fib (slang)|una trola|s||
+3|nonsense / rubbish (talk)|una chorrada;chorradas|s|Decir chorradas = to talk rubbish.|
+3|a row / a telling-off|una bronca|s|Echar la bronca = to tell someone off.|
+3|a smack / a punch (crude)|una hostia;una leche|v|Te doy una hostia = I'll smack you.|
+3|the face / mug (slang)|el careto;la jeta|s||
+3|a show-off / a bullshitter|un fantasma|s||
+3|to skip class|hacer pellas;hacer novillos|s|Hacer pellas is very Madrid.|
+3|a nerd / a swot|un empollón;una empollona|s||
+3|to cram (study hard)|empollar|s||
+3|a freeloader / a sponger|un gorrón;una gorrona|s||
+3|a chat / a natter|un palique;estar de palique|s||

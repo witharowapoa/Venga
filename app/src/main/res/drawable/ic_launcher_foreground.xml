@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Speech bubble with a small star (Madrid's flag has seven). 108dp canvas, safe zone is the middle 66dp. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- bubble -->
+    <path
+        android:fillColor="#FBF6EE"
+        android:pathData="M36,34 L72,34 Q80,34 80,42 L80,62 Q80,70 72,70 L50,70 L40,79 L41,70 L36,70 Q28,70 28,62 L28,42 Q28,34 36,34 Z" />
+    <!-- star -->
+    <path
+        android:fillColor="#C8102E"
+        android:pathData="M54,40 L57.1,48.6 L66.4,48.9 L59.1,54.6 L61.6,63.4 L54,58.3 L46.4,63.4 L48.9,54.6 L41.6,48.9 L50.9,48.6 Z" />
+</vector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Venga</string>
+
+    <color name="venga_red">#C8102E</color>
+    <color name="venga_red_dark">#9E0B22</color>
+    <color name="venga_cream">#FBF6EE</color>
+
+    <style name="Theme.Venga" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/venga_red</item>
+        <item name="android:colorPrimaryDark">@color/venga_red_dark</item>
+        <item name="android:colorAccent">@color/venga_red</item>
+        <item name="android:windowBackground">@color/venga_cream</item>
+        <item name="android:statusBarColor">@color/venga_red_dark</item>
+        <item name="android:navigationBarColor">@color/venga_cream</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>
